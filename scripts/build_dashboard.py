@@ -12,7 +12,7 @@ from collections import defaultdict
 DATA_FILE = Path("data/mentions.json")
 OUTPUT_FILE = Path("docs/index.html")
 
-TARGET_NAME = "CHANGE_ME"
+TARGET_NAME = "The Big Picture (Barry Ritholtz)"
 
 
 def load_dataset():
