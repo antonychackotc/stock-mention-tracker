@@ -1,7 +1,8 @@
 """
 scrape.py - fetches recent posts from an RSS feed, extracts stock/ticker
-mentions, classifies each as bullish/bearish/neutral, and appends results
-to data/mentions.json (the historical dataset).
+mentions, classifies each as bullish/bearish/neutral using a fallback
+chain of LLM providers (cheapest/free first, paid last), and appends
+results to data/mentions.json.
 """
 
 import os
@@ -11,6 +12,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import feedparser
+import requests
 
 FEED_URL = "https://ritholtz.com/feed"
 TARGET_NAME = "The Big Picture (Barry Ritholtz)"
@@ -22,7 +24,6 @@ TICKER_PATTERN = re.compile(r"\$([A-Z]{1,5})\b")
 def fetch_recent_posts():
     feed = feedparser.parse(FEED_URL)
     items = []
-
     for entry in feed.entries:
         text = entry.get("title", "") + "\n" + entry.get("summary", "")
         items.append({
@@ -31,7 +32,6 @@ def fetch_recent_posts():
             "url": entry.get("link"),
             "published": entry.get("published_parsed"),
         })
-
     return items
 
 
@@ -39,12 +39,88 @@ def extract_tickers(text):
     return sorted(set(TICKER_PATTERN.findall(text)))
 
 
-def classify_stance(text, ticker):
-    prompt = (
+def _build_prompt(text, ticker):
+    return (
         f"Classify the stance toward stock ticker {ticker} in this text as "
         f"exactly one word: bullish, bearish, or neutral.\n\nText: {text}\n\n"
         f"Answer with one word only."
     )
+
+
+def _clean_stance(raw):
+    raw = raw.strip().lower()
+    for word in ("bullish", "bearish", "neutral"):
+        if word in raw:
+            return word
+    return "neutral"
+
+
+def _try_grok(prompt, api_key):
+    resp = requests.post(
+        "https://api.x.ai/v1/chat/completions",
+        headers={"Authorization": f"Bearer {api_key}"},
+        json={
+            "model": "grok-beta",
+            "messages": [{"role": "user", "content": prompt}],
+            "max_tokens": 5,
+        },
+        timeout=20,
+    )
+    resp.raise_for_status()
+    return resp.json()["choices"][0]["message"]["content"]
+
+
+def _try_gemini(prompt, api_key):
+    resp = requests.post(
+        f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={api_key}",
+        json={"contents": [{"parts": [{"text": prompt}]}]},
+        timeout=20,
+    )
+    resp.raise_for_status()
+    return resp.json()["candidates"][0]["content"]["parts"][0]["text"]
+
+
+def _try_anthropic(prompt, api_key):
+    resp = requests.post(
+        "https://api.anthropic.com/v1/messages",
+        headers={
+            "x-api-key": api_key,
+            "anthropic-version": "2023-06-01",
+            "content-type": "application/json",
+        },
+        json={
+            "model": "claude-haiku-4-5-20251001",
+            "max_tokens": 5,
+            "messages": [{"role": "user", "content": prompt}],
+        },
+        timeout=20,
+    )
+    resp.raise_for_status()
+    return resp.json()["content"][0]["text"]
+
+
+def classify_stance(text, ticker):
+    prompt = _build_prompt(text, ticker)
+
+    chain = [
+        ("GROK_API_KEY_1", _try_grok),
+        ("GROK_API_KEY_2", _try_grok),
+        ("GEMINI_API_KEY", _try_gemini),
+        ("ANTHROPIC_API_KEY", _try_anthropic),
+    ]
+
+    for env_name, fn in chain:
+        api_key = os.environ.get(env_name)
+        if not api_key:
+            continue
+        try:
+            raw = fn(prompt, api_key)
+            return _clean_stance(raw)
+        except Exception as e:
+            print(f"  [{env_name}] failed: {e}")
+            continue
+
+    print("  All providers failed - defaulting to neutral")
     return "neutral"
 
 
