@@ -60,12 +60,12 @@ def _parse_json_array(raw):
     return []
 
 
-def _try_grok(prompt, api_key):
+def _try_groq(prompt, api_key):
     resp = requests.post(
-        "https://api.x.ai/v1/chat/completions",
+        "https://api.groq.com/openai/v1/chat/completions",
         headers={"Authorization": f"Bearer {api_key}"},
         json={
-            "model": "grok-beta",
+            "model": "llama-3.3-70b-versatile",
             "messages": [{"role": "user", "content": prompt}],
             "max_tokens": 500,
         },
@@ -77,7 +77,7 @@ def _try_grok(prompt, api_key):
 
 def _try_gemini(prompt, api_key):
     resp = requests.post(
-        f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={api_key}",
+        f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key={api_key}",
         json={"contents": [{"parts": [{"text": prompt}]}]},
         timeout=30,
     )
@@ -108,8 +108,8 @@ def extract_mentions(text):
     prompt = _build_extraction_prompt(text)
 
     chain = [
-        ("GROK_API_KEY_1", _try_grok),
-        ("GROK_API_KEY_2", _try_grok),
+        ("GROK_API_KEY_1", _try_groq),
+        ("GROK_API_KEY_2", _try_groq),
         ("GEMINI_API_KEY", _try_gemini),
         ("ANTHROPIC_API_KEY", _try_anthropic),
     ]
