@@ -1,8 +1,7 @@
 """
-scrape.py - fetches recent posts from an RSS feed, extracts stock/ticker
-mentions, classifies each as bullish/bearish/neutral using a fallback
-chain of LLM providers (cheapest/free first, paid last), and appends
-results to data/mentions.json.
+scrape.py - fetches recent posts from an RSS feed, uses an LLM (with a
+fallback chain of providers) to extract real stock/company mentions and
+classify stance, and appends results to data/mentions.json.
 """
 
 import os
@@ -17,8 +16,6 @@ import requests
 FEED_URL = "https://ritholtz.com/feed"
 TARGET_NAME = "The Big Picture (Barry Ritholtz)"
 DATA_FILE = Path("data/mentions.json")
-
-TICKER_PATTERN = re.compile(r"\$([A-Z]{1,5})\b")
 
 
 def fetch_recent_posts():
@@ -35,24 +32,32 @@ def fetch_recent_posts():
     return items
 
 
-def extract_tickers(text):
-    return sorted(set(TICKER_PATTERN.findall(text)))
-
-
-def _build_prompt(text, ticker):
+def _build_extraction_prompt(text):
     return (
-        f"Classify the stance toward stock ticker {ticker} in this text as "
-        f"exactly one word: bullish, bearish, or neutral.\n\nText: {text}\n\n"
-        f"Answer with one word only."
+        "Read the following article text. Identify any publicly traded "
+        "companies or stock tickers mentioned, and classify the stance "
+        "toward each as bullish, bearish, or neutral based on the context.\n\n"
+        "Respond with ONLY a JSON array, no other text, in this exact format:\n"
+        '[{"ticker": "AAPL", "stance": "bullish"}, {"ticker": "TSLA", "stance": "neutral"}]\n\n'
+        "If a company is mentioned but has no clear public ticker, use its "
+        "common short name instead (e.g. \"Fed\" is not a ticker, skip it - "
+        "only include actual publicly traded companies).\n"
+        "If no companies/stocks are mentioned, respond with exactly: []\n\n"
+        f"Article text:\n{text[:3000]}"
     )
 
 
-def _clean_stance(raw):
-    raw = raw.strip().lower()
-    for word in ("bullish", "bearish", "neutral"):
-        if word in raw:
-            return word
-    return "neutral"
+def _parse_json_array(raw):
+    raw = raw.strip()
+    raw = re.sub(r"^```(json)?", "", raw).strip()
+    raw = re.sub(r"```$", "", raw).strip()
+    try:
+        data = json.loads(raw)
+        if isinstance(data, list):
+            return data
+    except json.JSONDecodeError:
+        pass
+    return []
 
 
 def _try_grok(prompt, api_key):
@@ -62,9 +67,9 @@ def _try_grok(prompt, api_key):
         json={
             "model": "grok-beta",
             "messages": [{"role": "user", "content": prompt}],
-            "max_tokens": 5,
+            "max_tokens": 500,
         },
-        timeout=20,
+        timeout=30,
     )
     resp.raise_for_status()
     return resp.json()["choices"][0]["message"]["content"]
@@ -74,7 +79,7 @@ def _try_gemini(prompt, api_key):
     resp = requests.post(
         f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={api_key}",
         json={"contents": [{"parts": [{"text": prompt}]}]},
-        timeout=20,
+        timeout=30,
     )
     resp.raise_for_status()
     return resp.json()["candidates"][0]["content"]["parts"][0]["text"]
@@ -90,17 +95,17 @@ def _try_anthropic(prompt, api_key):
         },
         json={
             "model": "claude-haiku-4-5-20251001",
-            "max_tokens": 5,
+            "max_tokens": 500,
             "messages": [{"role": "user", "content": prompt}],
         },
-        timeout=20,
+        timeout=30,
     )
     resp.raise_for_status()
     return resp.json()["content"][0]["text"]
 
 
-def classify_stance(text, ticker):
-    prompt = _build_prompt(text, ticker)
+def extract_mentions(text):
+    prompt = _build_extraction_prompt(text)
 
     chain = [
         ("GROK_API_KEY_1", _try_grok),
@@ -115,13 +120,14 @@ def classify_stance(text, ticker):
             continue
         try:
             raw = fn(prompt, api_key)
-            return _clean_stance(raw)
+            mentions = _parse_json_array(raw)
+            return mentions
         except Exception as e:
             print(f"  [{env_name}] failed: {e}")
             continue
 
-    print("  All providers failed - defaulting to neutral")
-    return "neutral"
+    print("  All providers failed - no mentions extracted for this post")
+    return []
 
 
 def load_existing_dataset():
@@ -147,14 +153,21 @@ def main():
         if item["id"] in existing_ids:
             continue
 
-        tickers = extract_tickers(item["text"])
-        for ticker in tickers:
-            stance = classify_stance(item["text"], ticker)
-            published = item["published"]
-            mentioned_at = (
-                datetime(*published[:6], tzinfo=timezone.utc).isoformat()
-                if published else datetime.now(timezone.utc).isoformat()
-            )
+        extracted = extract_mentions(item["text"])
+        published = item["published"]
+        mentioned_at = (
+            datetime(*published[:6], tzinfo=timezone.utc).isoformat()
+            if published else datetime.now(timezone.utc).isoformat()
+        )
+
+        for entry in extracted:
+            ticker = entry.get("ticker", "").upper().strip()
+            stance = entry.get("stance", "neutral").lower().strip()
+            if stance not in ("bullish", "bearish", "neutral"):
+                stance = "neutral"
+            if not ticker:
+                continue
+
             new_mentions.append({
                 "source_id": item["id"],
                 "ticker": ticker,
