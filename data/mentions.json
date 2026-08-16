@@ -1,4 +1,14 @@
 {
-  "mentions": [],
-  "last_updated": "2026-08-16T11:29:39.842326+00:00"
+  "mentions": [
+    {
+      "source_id": "https://ritholtz.com/?p=361105",
+      "ticker": "JPM",
+      "stance": "neutral",
+      "text_excerpt": "MiB: Filippo Gori, J.P. Morgan co-head of Global Banking\n<p>\ufeff &#160; On this special, bonus episode of Masters in Business, I speak with Filippo Gori, co-head of Global Banking at J.P. Morgan. Gori shares insights from his climb through the firm&#8217;s ranks across London and Ho",
+      "source_url": "https://ritholtz.com/2026/08/mib-filippo-gori/",
+      "mentioned_at": "2026-08-13T19:00:14+00:00",
+      "type": "post"
+    }
+  ],
+  "last_updated": "2026-08-16T12:56:24.984814+00:00"
 }
