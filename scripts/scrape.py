@@ -1,187 +1,366 @@
 """
-scrape.py - fetches recent posts from an RSS feed, uses an LLM (with a
-fallback chain of providers) to extract real stock/company mentions and
-classify stance, and appends results to data/mentions.json.
+scrape.py — Big Picture Tracker multi-source scraper
+
+Reads multiple RSS feeds (tagged by region), fetches full article text for
+NEW posts only, extracts stock/company mentions + stance via an LLM
+fallback chain, and appends results to data/mentions.json.
+
+IMPORTANT: This is a reconstruction based on the documented behavior of
+the original single-source (Ritholtz-only) scraper. Diff this against
+your actual scrape.py before deploying — do not overwrite blindly.
+
+Fallback chain: Groq (key 1) -> Groq (key 2) -> Gemini -> Claude (Anthropic)
+Env vars expected (GitHub Actions secrets, names unchanged from original):
+  GROK_API_KEY_1   (actually a Groq key, per earlier naming fix)
+  GROK_API_KEY_2
+  GEMINI_API_KEY
+  ANTHROPIC_API_KEY
 """
 
-import os
+import calendar
 import json
+import os
 import re
+import time
 from datetime import datetime, timezone
-from pathlib import Path
 
 import feedparser
 import requests
+from bs4 import BeautifulSoup
 
-FEED_URL = "https://ritholtz.com/feed"
-TARGET_NAME = "The Big Picture (Barry Ritholtz)"
-DATA_FILE = Path("data/mentions.json")
+# ---------------------------------------------------------------------------
+# CONFIG
+# ---------------------------------------------------------------------------
+
+DATA_FILE = "data/mentions.json"
+
+# Each source is independently rate-capped so one noisy feed can't drain
+# the day's free-tier quota. Add/remove sources here only.
+SOURCES = [
+    {
+        "name": "The Big Picture (Barry Ritholtz)",
+        "region": "US",
+        "rss_url": "https://ritholtz.com/feed",
+        "max_new_per_run": 5,
+    },
+    {
+        "name": "Klement on Investing",
+        "region": "Europe",
+        "rss_url": "https://klementoninvesting.substack.com/feed",
+        "max_new_per_run": 5,
+    },
+    {
+        "name": "Bursa Dummy",
+        "region": "Asia",
+        "rss_url": "https://bursadummy.blogspot.com/feeds/posts/default?alt=rss",
+        "max_new_per_run": 5,
+    },
+    {
+        "name": "SmallCaps.co.za",
+        "region": "Africa",
+        "rss_url": "https://smallcaps.co.za/feed",
+        "max_new_per_run": 5,
+    },
+]
+
+REQUEST_TIMEOUT = 15
+USER_AGENT = "BigPictureTracker/1.0 (+https://antonychackotc.github.io/stock-mention-tracker/)"
+
+GROQ_MODEL = "llama-3.3-70b-versatile"
+GROQ_ENDPOINT = "https://api.groq.com/openai/v1/chat/completions"
+GEMINI_MODEL = "gemini-3.6-flash"
+GEMINI_ENDPOINT = (
+    f"https://generativelanguage.googleapis.com/v1beta/models/"
+    f"{GEMINI_MODEL}:generateContent"
+)
+ANTHROPIC_ENDPOINT = "https://api.anthropic.com/v1/messages"
+ANTHROPIC_MODEL = "claude-haiku-4-5-20251001"  # backend extraction only — NOT the Capafy-facing model
+
+EXTRACTION_PROMPT = """You are a financial text analyst. Read the article
+text below and extract every individual publicly-traded STOCK or COMPANY
+mentioned, along with the author's apparent stance toward it.
+
+Return ONLY a JSON array, no other text, no markdown fences. Each element:
+{{"ticker": "AAPL", "stance": "bullish" | "bearish" | "neutral"}}
+
+DO NOT include:
+- Market indices (e.g. S&P 500, Nasdaq, ^GSPC, ^IXIC, KLCI as an index,
+  FTSE, DAX) — only individual companies
+- Currencies, commodities, or crypto tickers
+- ETFs unless the author is discussing it as a specific investable
+  product with a clear stance (not just mentioning "the market")
+
+If no individual stocks/companies are mentioned, return an empty
+array: []
+
+Article text:
+{article_text}
+"""
 
 
-def fetch_recent_posts():
-    feed = feedparser.parse(FEED_URL)
-    items = []
-    for entry in feed.entries:
-        text = entry.get("title", "") + "\n" + entry.get("summary", "")
-        items.append({
-            "id": entry.get("id", entry.get("link")),
-            "text": text,
-            "url": entry.get("link"),
-            "published": entry.get("published_parsed"),
-        })
-    return items
+# ---------------------------------------------------------------------------
+# STATE / DEDUPE
+# ---------------------------------------------------------------------------
 
-
-def _build_extraction_prompt(text):
-    return (
-        "Read the following article text. Identify any publicly traded "
-        "companies or stock tickers mentioned, and classify the stance "
-        "toward each as bullish, bearish, or neutral based on the context.\n\n"
-        "Respond with ONLY a JSON array, no other text, in this exact format:\n"
-        '[{"ticker": "AAPL", "stance": "bullish"}, {"ticker": "TSLA", "stance": "neutral"}]\n\n'
-        "If a company is mentioned but has no clear public ticker, use its "
-        "common short name instead (e.g. \"Fed\" is not a ticker, skip it - "
-        "only include actual publicly traded companies).\n"
-        "If no companies/stocks are mentioned, respond with exactly: []\n\n"
-        f"Article text:\n{text[:3000]}"
-    )
-
-
-def _parse_json_array(raw):
-    raw = raw.strip()
-    raw = re.sub(r"^```(json)?", "", raw).strip()
-    raw = re.sub(r"```$", "", raw).strip()
-    try:
-        data = json.loads(raw)
-        if isinstance(data, list):
+def load_existing_mentions():
+    """Returns the full data dict: {"mentions": [...], "last_updated": ...}
+    Matches the REAL production schema (confirmed from live mentions.json),
+    not a guessed flat-list format."""
+    if not os.path.exists(DATA_FILE):
+        return {"mentions": [], "last_updated": None}
+    with open(DATA_FILE, "r", encoding="utf-8") as f:
+        try:
+            data = json.load(f)
+            if "mentions" not in data:
+                data["mentions"] = []
             return data
+        except json.JSONDecodeError:
+            return {"mentions": [], "last_updated": None}
+
+
+def already_seen_ids(data):
+    """Dedupe by source_id (the real unique key in production), falling
+    back to source_url for any older records that might lack it."""
+    seen = set()
+    for m in data.get("mentions", []):
+        key = m.get("source_id") or m.get("source_url")
+        if key:
+            seen.add(key)
+    return seen
+
+
+# ---------------------------------------------------------------------------
+# FETCHING
+# ---------------------------------------------------------------------------
+
+def fetch_full_article_text(url):
+    """Fetch the article page and extract readable text. Best-effort —
+    strips scripts/nav/footer, returns plain text of <p> tags. Falls back
+    to the RSS summary if the page fetch fails (paywall, block, etc.)."""
+    try:
+        resp = requests.get(
+            url, headers={"User-Agent": USER_AGENT}, timeout=REQUEST_TIMEOUT
+        )
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "html.parser")
+        for tag in soup(["script", "style", "nav", "footer", "header", "aside"]):
+            tag.decompose()
+        paragraphs = soup.find_all("p")
+        text = "\n".join(p.get_text(strip=True) for p in paragraphs)
+        text = re.sub(r"\n{2,}", "\n", text).strip()
+        # Guard against paywalled pages that return a short teaser only —
+        # treat anything under ~400 chars as unusable rather than feeding
+        # the LLM a near-empty prompt.
+        if len(text) < 400:
+            return None
+        return text[:8000]  # cap tokens sent to the LLM
+    except requests.RequestException:
+        return None
+
+
+def get_new_entries(source, seen_ids):
+    feed = feedparser.parse(source["rss_url"])
+    new_entries = []
+    for entry in feed.entries:
+        entry_id = entry.get("id") or entry.get("link")
+        if not entry_id or entry_id in seen_ids:
+            continue
+        new_entries.append(entry)
+    # newest first, capped per source
+    new_entries.sort(
+        key=lambda e: e.get("published_parsed") or time.gmtime(0), reverse=True
+    )
+    return new_entries[: source["max_new_per_run"]]
+
+
+# ---------------------------------------------------------------------------
+# LLM FALLBACK CHAIN
+# ---------------------------------------------------------------------------
+
+def _parse_json_array(raw_text):
+    raw_text = raw_text.strip()
+    raw_text = re.sub(r"^```(?:json)?|```$", "", raw_text, flags=re.MULTILINE).strip()
+    try:
+        parsed = json.loads(raw_text)
+        if isinstance(parsed, list):
+            return parsed
     except json.JSONDecodeError:
         pass
-    return []
+    return None
 
 
-def _try_groq(prompt, api_key):
-    resp = requests.post(
-        "https://api.groq.com/openai/v1/chat/completions",
-        headers={"Authorization": f"Bearer {api_key}"},
-        json={
-            "model": "llama-3.3-70b-versatile",
-            "messages": [{"role": "user", "content": prompt}],
-            "max_tokens": 500,
-        },
-        timeout=30,
-    )
-    resp.raise_for_status()
-    return resp.json()["choices"][0]["message"]["content"]
+def _try_groq(api_key, prompt):
+    if not api_key:
+        return None
+    try:
+        resp = requests.post(
+            GROQ_ENDPOINT,
+            headers={"Authorization": f"Bearer {api_key}"},
+            json={
+                "model": GROQ_MODEL,
+                "messages": [{"role": "user", "content": prompt}],
+                "temperature": 0,
+            },
+            timeout=REQUEST_TIMEOUT,
+        )
+        resp.raise_for_status()
+        content = resp.json()["choices"][0]["message"]["content"]
+        return _parse_json_array(content)
+    except Exception:
+        return None
 
 
-def _try_gemini(prompt, api_key):
-    resp = requests.post(
-        f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key={api_key}",
-        json={"contents": [{"parts": [{"text": prompt}]}]},
-        timeout=30,
-    )
-    resp.raise_for_status()
-    return resp.json()["candidates"][0]["content"]["parts"][0]["text"]
+def _try_gemini(api_key, prompt):
+    if not api_key:
+        return None
+    try:
+        resp = requests.post(
+            f"{GEMINI_ENDPOINT}?key={api_key}",
+            json={"contents": [{"parts": [{"text": prompt}]}]},
+            timeout=REQUEST_TIMEOUT,
+        )
+        resp.raise_for_status()
+        content = resp.json()["candidates"][0]["content"]["parts"][0]["text"]
+        return _parse_json_array(content)
+    except Exception:
+        return None
 
 
-def _try_anthropic(prompt, api_key):
-    resp = requests.post(
-        "https://api.anthropic.com/v1/messages",
-        headers={
-            "x-api-key": api_key,
-            "anthropic-version": "2023-06-01",
-            "content-type": "application/json",
-        },
-        json={
-            "model": "claude-haiku-4-5-20251001",
-            "max_tokens": 500,
-            "messages": [{"role": "user", "content": prompt}],
-        },
-        timeout=30,
-    )
-    resp.raise_for_status()
-    return resp.json()["content"][0]["text"]
+def _try_anthropic(api_key, prompt):
+    if not api_key:
+        return None
+    try:
+        resp = requests.post(
+            ANTHROPIC_ENDPOINT,
+            headers={
+                "x-api-key": api_key,
+                "anthropic-version": "2023-06-01",
+                "content-type": "application/json",
+            },
+            json={
+                "model": ANTHROPIC_MODEL,
+                "max_tokens": 1000,
+                "messages": [{"role": "user", "content": prompt}],
+            },
+            timeout=REQUEST_TIMEOUT,
+        )
+        resp.raise_for_status()
+        content = resp.json()["content"][0]["text"]
+        return _parse_json_array(content)
+    except Exception:
+        return None
 
 
-def extract_mentions(text):
-    prompt = _build_extraction_prompt(text)
+def extract_mentions(article_text):
+    prompt = EXTRACTION_PROMPT.format(article_text=article_text)
 
-    chain = [
-        ("GROK_API_KEY_1", _try_groq),
-        ("GROK_API_KEY_2", _try_groq),
-        ("GEMINI_API_KEY", _try_gemini),
-        ("ANTHROPIC_API_KEY", _try_anthropic),
-    ]
+    keys = {
+        "Groq (key 1)": os.environ.get("GROK_API_KEY_1"),
+        "Groq (key 2)": os.environ.get("GROK_API_KEY_2"),
+        "Gemini": os.environ.get("GEMINI_API_KEY"),
+        "Anthropic": os.environ.get("ANTHROPIC_API_KEY"),
+    }
+    missing = [name for name, key in keys.items() if not key]
+    if missing:
+        print(f"  [WARNING] no API key set for: {', '.join(missing)} "
+              f"— these providers will be skipped, not just 'found nothing'")
 
-    for env_name, fn in chain:
-        api_key = os.environ.get(env_name)
-        if not api_key:
-            continue
-        try:
-            raw = fn(prompt, api_key)
-            mentions = _parse_json_array(raw)
-            return mentions
-        except Exception as e:
-            print(f"  [{env_name}] failed: {e}")
-            continue
+    result = _try_groq(keys["Groq (key 1)"], prompt)
+    if result is not None:
+        return result
 
-    print("  All providers failed - no mentions extracted for this post")
-    return []
+    result = _try_groq(keys["Groq (key 2)"], prompt)
+    if result is not None:
+        return result
+
+    result = _try_gemini(keys["Gemini"], prompt)
+    if result is not None:
+        return result
+
+    result = _try_anthropic(keys["Anthropic"], prompt)
+    if result is not None:
+        return result
+
+    if all(not k for k in keys.values()):
+        print("  [ERROR] ALL 4 providers had no API key set — this result is "
+              "MEANINGLESS, not a real 'no mentions found'. Set your API keys "
+              "as environment variables before trusting this test.")
+    else:
+        print("  [WARNING] all configured providers failed (network error, "
+              "rate limit, or bad key) — this is NOT a confirmed 'no mentions'")
+
+    return []  # all providers failed — don't crash the run, just skip this post
 
 
-def load_existing_dataset():
-    if DATA_FILE.exists():
-        return json.loads(DATA_FILE.read_text())
-    return {"mentions": [], "last_updated": None}
-
-
-def save_dataset(dataset):
-    DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
-    dataset["last_updated"] = datetime.now(timezone.utc).isoformat()
-    DATA_FILE.write_text(json.dumps(dataset, indent=2))
-
+# ---------------------------------------------------------------------------
+# MAIN
+# ---------------------------------------------------------------------------
 
 def main():
-    dataset = load_existing_dataset()
-    existing_ids = {m["source_id"] for m in dataset["mentions"]}
-
-    items = fetch_recent_posts()
+    data = load_existing_mentions()
+    existing_mentions = data.get("mentions", [])
+    seen = already_seen_ids(data)
     new_mentions = []
 
-    for item in items:
-        if item["id"] in existing_ids:
-            continue
+    for source in SOURCES:
+        entries = get_new_entries(source, seen)
+        print(f"[{source['name']}] {len(entries)} new post(s) to process")
 
-        extracted = extract_mentions(item["text"])
-        published = item["published"]
-        mentioned_at = (
-            datetime(*published[:6], tzinfo=timezone.utc).isoformat()
-            if published else datetime.now(timezone.utc).isoformat()
-        )
+        for entry in entries:
+            link = entry.get("link")
+            entry_id = entry.get("id") or link
+            title = entry.get("title", "")
+            # Normalize to ISO 8601 regardless of the source feed's raw
+            # date format (Ritholtz gives ISO, others give RFC 822) — this
+            # is what caused the dashboard crash on mixed-format dates.
+            if entry.get("published_parsed"):
+                published = datetime.fromtimestamp(
+                    calendar.timegm(entry.published_parsed), tz=timezone.utc
+                ).isoformat()
+            else:
+                published = datetime.now(timezone.utc).isoformat()
 
-        for entry in extracted:
-            ticker = entry.get("ticker", "").upper().strip()
-            stance = entry.get("stance", "neutral").lower().strip()
-            if stance not in ("bullish", "bearish", "neutral"):
-                stance = "neutral"
-            if not ticker:
+            article_text = fetch_full_article_text(link)
+            if not article_text:
+                print(f"  skip (fetch failed or paywalled): {link}")
                 continue
 
-            new_mentions.append({
-                "source_id": item["id"],
-                "ticker": ticker,
-                "stance": stance,
-                "text_excerpt": item["text"][:280],
-                "source_url": item["url"],
-                "mentioned_at": mentioned_at,
-                "type": "post",
-            })
+            extracted = extract_mentions(article_text)
+            if not extracted:
+                print(f"  no mentions found: {title[:60]}")
+                continue
 
-    dataset["mentions"].extend(new_mentions)
-    save_dataset(dataset)
-    print(f"Added {len(new_mentions)} new mentions. "
-          f"Total dataset size: {len(dataset['mentions'])}")
+            for item in extracted:
+                ticker = item.get("ticker", "").upper().strip()
+                stance = item.get("stance", "neutral").lower().strip()
+                if not ticker or stance not in ("bullish", "bearish", "neutral"):
+                    continue
+                new_mentions.append({
+                    "source_id": entry_id,
+                    "ticker": ticker,
+                    "stance": stance,
+                    "text_excerpt": f"{title}\n{article_text[:280]}",
+                    "source_url": link,
+                    "source_name": source["name"],
+                    "source_region": source["region"],
+                    "mentioned_at": published,
+                    "type": "post",
+                })
+            print(f"  extracted {len(extracted)} mention(s): {title[:60]}")
+
+    if new_mentions:
+        combined_mentions = existing_mentions + new_mentions
+        output = {
+            "mentions": combined_mentions,
+            "last_updated": datetime.now(timezone.utc).isoformat(),
+        }
+        os.makedirs(os.path.dirname(DATA_FILE), exist_ok=True)
+        with open(DATA_FILE, "w", encoding="utf-8") as f:
+            json.dump(output, f, indent=2, ensure_ascii=False)
+        print(f"Wrote {len(new_mentions)} new mention(s) to {DATA_FILE} "
+              f"(total now {len(combined_mentions)})")
+    else:
+        print("No new mentions this run.")
 
 
 if __name__ == "__main__":

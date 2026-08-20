@@ -2,137 +2,584 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>The Big Picture (Barry Ritholtz) - Stock Mention Tracker</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Big Picture Tracker - Multi-Region Stock Mention Tracker</title>
 <style>
-  body { font-family: -apple-system, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; color: #1a1a1a; }
-  h1 { font-size: 28px; }
-  .updated { color: #666; font-size: 13px; margin-bottom: 30px; }
-  table { width: 100%; border-collapse: collapse; margin-bottom: 40px; }
-  th, td { text-align: left; padding: 8px 12px; border-bottom: 1px solid #eee; }
-  th { color: #888; font-size: 12px; text-transform: uppercase; }
-  .bull { color: #16a34a; font-weight: 600; }
-  .bear { color: #dc2626; font-weight: 600; }
-  .disclaimer { font-size: 13px; color: #888; border-top: 1px solid #eee; padding-top: 20px; margin-top: 40px; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 960px; margin: 0 auto; padding: 48px 24px 80px;
+    color: #17181c; background: #fafafa; line-height: 1.5;
+  }
+  .eyebrow {
+    font-size: 13px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase;
+    color: #7c6cf0; margin-bottom: 8px;
+  }
+  h1 { font-size: 30px; font-weight: 700; margin: 0 0 6px; letter-spacing: -0.01em; }
+  .subtitle { color: #6b6f76; font-size: 15px; margin: 0 0 24px; }
+  .stat-row { display: flex; gap: 16px; margin-bottom: 24px; flex-wrap: wrap; }
+  .stat-box {
+    background: #fff; border: 1px solid #ececec; border-radius: 12px;
+    padding: 16px 20px; min-width: 140px;
+  }
+  .stat-num { font-size: 24px; font-weight: 700; color: #17181c; }
+  .stat-label { font-size: 12px; color: #8a8f98; text-transform: uppercase; letter-spacing: 0.03em; margin-top: 2px; }
+  .region-filter-row { display: flex; gap: 8px; margin-bottom: 32px; flex-wrap: wrap; }
+  .region-btn {
+    font-size: 13px; font-weight: 600; padding: 7px 16px; border-radius: 20px;
+    border: 1px solid #ececec; background: #fff; color: #6b6f76; cursor: pointer;
+  }
+  .region-btn.active { background: #17181c; color: #fff; border-color: #17181c; }
+  h2 { font-size: 18px; font-weight: 600; margin: 40px 0 16px; display: flex; align-items: center; gap: 8px; }
+  .window-tag { font-size: 12px; font-weight: 500; color: #8a8f98; background: #f1f0fe; padding: 3px 10px; border-radius: 20px; }
+  .ticker-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+  .ticker-card {
+    display: block; background: #fff; border: 1px solid #ececec; border-radius: 12px;
+    padding: 16px; text-decoration: none; color: inherit; transition: border-color 0.15s;
+  }
+  .ticker-card:hover { border-color: #7c6cf0; }
+  .ticker-card-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+  .ticker-symbol { font-size: 17px; font-weight: 700; letter-spacing: -0.01em; }
+  .badge { font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.02em; }
+  .badge-bull { background: #e3f7ea; color: #16a34a; }
+  .badge-bear { background: #fdeaea; color: #dc2626; }
+  .badge-neutral { background: #f1f1f1; color: #6b6f76; }
+  .region-row { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }
+  .region-tag { font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 10px; text-transform: uppercase; letter-spacing: 0.02em; }
+  .ticker-stats { display: flex; gap: 10px; flex-wrap: wrap; font-size: 12px; color: #8a8f98; }
+  .stat-bull { color: #16a34a; font-weight: 600; }
+  .stat-bear { color: #dc2626; font-weight: 600; }
+  .stat-neutral { color: #6b6f76; }
+  .empty { color: #8a8f98; font-size: 14px; font-style: italic; padding: 20px 0; }
+  .footer {
+    margin-top: 56px; padding-top: 24px; border-top: 1px solid #ececec;
+    font-size: 12.5px; color: #8a8f98; line-height: 1.7;
+  }
+  .footer a { color: #7c6cf0; }
+  .footer ul { margin: 8px 0 16px; padding-left: 20px; }
 </style>
 </head>
 <body>
-  <h1>The Big Picture (Barry Ritholtz) - Stock Mention Tracker</h1>
-  <p class="updated">Last updated: 2026-08-19T05:40:01.719430+00:00</p>
+  <div class="eyebrow">Fan-built · updates hourly · 4 regions tracked</div>
+  <h1>Big Picture Tracker</h1>
+  <p class="subtitle">Multi-region stock mention tracker · last updated Aug 20, 2026 at 10:17 UTC</p>
 
-  <h2>Daily</h2>
-  <table>
-    <tr><th>Ticker</th><th>Mentions</th><th>Bullish</th><th>Bearish</th><th>Neutral</th></tr>
-    
-        <tr>
-          <td><strong>AAPL</strong></td>
-          <td>1</td>
-          <td class="bull">0</td>
-          <td class="bear">0</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td><strong>SPOT</strong></td>
-          <td>1</td>
-          <td class="bull">0</td>
-          <td class="bear">0</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td><strong>GOOGL</strong></td>
-          <td>1</td>
-          <td class="bull">0</td>
-          <td class="bear">0</td>
-          <td>1</td>
-        </tr>
-  </table>
+  <div class="stat-row">
+    <div class="stat-box"><div class="stat-num">53</div><div class="stat-label">Tickers tracked</div></div>
+    <div class="stat-box"><div class="stat-num">80</div><div class="stat-label">Total mentions</div></div>
+    <div class="stat-box"><div class="stat-num">4</div><div class="stat-label">Regions</div></div>
+  </div>
 
-  <h2>Weekly</h2>
-  <table>
-    <tr><th>Ticker</th><th>Mentions</th><th>Bullish</th><th>Bearish</th><th>Neutral</th></tr>
-    
-        <tr>
-          <td><strong>JPM</strong></td>
-          <td>1</td>
-          <td class="bull">0</td>
-          <td class="bear">0</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td><strong>BLK</strong></td>
-          <td>1</td>
-          <td class="bull">0</td>
-          <td class="bear">0</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td><strong>AAPL</strong></td>
-          <td>1</td>
-          <td class="bull">0</td>
-          <td class="bear">0</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td><strong>SPOT</strong></td>
-          <td>1</td>
-          <td class="bull">0</td>
-          <td class="bear">0</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td><strong>GOOGL</strong></td>
-          <td>1</td>
-          <td class="bull">0</td>
-          <td class="bear">0</td>
-          <td>1</td>
-        </tr>
-  </table>
+  <div class="region-filter-row" id="regionFilters">
+    <button class="region-btn active" data-filter="all">All</button><button class="region-btn" data-filter="US">US</button><button class="region-btn" data-filter="Europe">Europe</button><button class="region-btn" data-filter="Asia">Asia</button><button class="region-btn" data-filter="Africa">Africa</button>
+  </div>
 
-  <h2>Monthly</h2>
-  <table>
-    <tr><th>Ticker</th><th>Mentions</th><th>Bullish</th><th>Bearish</th><th>Neutral</th></tr>
-    
-        <tr>
-          <td><strong>JPM</strong></td>
-          <td>1</td>
-          <td class="bull">0</td>
-          <td class="bear">0</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td><strong>BLK</strong></td>
-          <td>1</td>
-          <td class="bull">0</td>
-          <td class="bear">0</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td><strong>AAPL</strong></td>
-          <td>1</td>
-          <td class="bull">0</td>
-          <td class="bear">0</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td><strong>SPOT</strong></td>
-          <td>1</td>
-          <td class="bull">0</td>
-          <td class="bear">0</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td><strong>GOOGL</strong></td>
-          <td>1</td>
-          <td class="bull">0</td>
-          <td class="bear">0</td>
-          <td>1</td>
-        </tr>
-  </table>
+  <h2>Daily <span class="window-tag">last 24h</span></h2>
+  <div class="ticker-grid"><p class="empty">No mentions in this window yet.</p></div>
 
-  <p class="disclaimer">
-    This is a fan-built information aggregation tool tracking The Big Picture (Barry Ritholtz)'s
-    public posts. Not affiliated with The Big Picture (Barry Ritholtz). Stance labels are
-    AI-inferred and may be inaccurate. Not investment advice - always verify
-    against the original source posts and consult a licensed financial advisor.
-  </p>
+  <h2>Weekly <span class="window-tag">last 7 days</span></h2>
+  <div class="ticker-grid">
+        <a class="ticker-card" data-region="Europe US US-legacy" href="https://klementoninvesting.substack.com/p/if-this-is-true-the-hyperscalers" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">AAPL</span>
+            <span class="badge badge-bull">bullish</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#0ea5b51a;color:#0ea5b5;">Europe</span><span class="region-tag" style="background:#7c6cf01a;color:#7c6cf0;">US</span><span class="region-tag" style="background:#7c6cf01a;color:#7c6cf0;">US-legacy</span></div>
+          <div class="ticker-stats">
+            <span>3 mentions</span>
+            <span class="stat-bull">1 bull</span>
+            <span class="stat-bear">0 bear</span>
+            <span class="stat-neutral">2 neutral</span>
+          </div>
+        </a>
+        <a class="ticker-card" data-region="US" href="https://ritholtz.com/2026/08/10-sunday-reads-241/" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">INTC</span>
+            <span class="badge badge-neutral">neutral</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#7c6cf01a;color:#7c6cf0;">US</span></div>
+          <div class="ticker-stats">
+            <span>3 mentions</span>
+            <span class="stat-bull">0 bull</span>
+            <span class="stat-bear">0 bear</span>
+            <span class="stat-neutral">3 neutral</span>
+          </div>
+        </a>
+        <a class="ticker-card" data-region="Europe US-legacy" href="https://klementoninvesting.substack.com/p/if-this-is-true-the-hyperscalers" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">GOOGL</span>
+            <span class="badge badge-neutral">neutral</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#0ea5b51a;color:#0ea5b5;">Europe</span><span class="region-tag" style="background:#7c6cf01a;color:#7c6cf0;">US-legacy</span></div>
+          <div class="ticker-stats">
+            <span>2 mentions</span>
+            <span class="stat-bull">0 bull</span>
+            <span class="stat-bear">0 bear</span>
+            <span class="stat-neutral">2 neutral</span>
+          </div>
+        </a>
+        <a class="ticker-card" data-region="US" href="https://ritholtz.com/2026/08/10-wednesday-am-reads-385/" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">MCD</span>
+            <span class="badge badge-bear">bearish</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#7c6cf01a;color:#7c6cf0;">US</span></div>
+          <div class="ticker-stats">
+            <span>2 mentions</span>
+            <span class="stat-bull">0 bull</span>
+            <span class="stat-bear">1 bear</span>
+            <span class="stat-neutral">1 neutral</span>
+          </div>
+        </a>
+        <a class="ticker-card" data-region="Europe US" href="https://klementoninvesting.substack.com/p/if-this-is-true-the-hyperscalers" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">NVDA</span>
+            <span class="badge badge-bear">bearish</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#0ea5b51a;color:#0ea5b5;">Europe</span><span class="region-tag" style="background:#7c6cf01a;color:#7c6cf0;">US</span></div>
+          <div class="ticker-stats">
+            <span>2 mentions</span>
+            <span class="stat-bull">0 bull</span>
+            <span class="stat-bear">2 bear</span>
+            <span class="stat-neutral">0 neutral</span>
+          </div>
+        </a>
+        <a class="ticker-card" data-region="US-legacy" href="https://ritholtz.com/2026/08/10-monday-am-reads-488/" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">BLK</span>
+            <span class="badge badge-neutral">neutral</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#7c6cf01a;color:#7c6cf0;">US-legacy</span></div>
+          <div class="ticker-stats">
+            <span>1 mention</span>
+            <span class="stat-bull">0 bull</span>
+            <span class="stat-bear">0 bear</span>
+            <span class="stat-neutral">1 neutral</span>
+          </div>
+        </a>
+        <a class="ticker-card" data-region="US-legacy" href="https://ritholtz.com/2026/08/transcript-ankur-crawford/" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">SPOT</span>
+            <span class="badge badge-neutral">neutral</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#7c6cf01a;color:#7c6cf0;">US-legacy</span></div>
+          <div class="ticker-stats">
+            <span>1 mention</span>
+            <span class="stat-bull">0 bull</span>
+            <span class="stat-bear">0 bear</span>
+            <span class="stat-neutral">1 neutral</span>
+          </div>
+        </a>
+        <a class="ticker-card" data-region="US" href="https://ritholtz.com/2026/08/how-wealth-is-created-in-america/" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">MSFT</span>
+            <span class="badge badge-neutral">neutral</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#7c6cf01a;color:#7c6cf0;">US</span></div>
+          <div class="ticker-stats">
+            <span>1 mention</span>
+            <span class="stat-bull">0 bull</span>
+            <span class="stat-bear">0 bear</span>
+            <span class="stat-neutral">1 neutral</span>
+          </div>
+        </a>
+        <a class="ticker-card" data-region="US" href="https://ritholtz.com/2026/08/how-wealth-is-created-in-america/" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">BRK.B</span>
+            <span class="badge badge-neutral">neutral</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#7c6cf01a;color:#7c6cf0;">US</span></div>
+          <div class="ticker-stats">
+            <span>1 mention</span>
+            <span class="stat-bull">0 bull</span>
+            <span class="stat-bear">0 bear</span>
+            <span class="stat-neutral">1 neutral</span>
+          </div>
+        </a>
+        <a class="ticker-card" data-region="US" href="https://ritholtz.com/2026/08/how-wealth-is-created-in-america/" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">NKE</span>
+            <span class="badge badge-neutral">neutral</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#7c6cf01a;color:#7c6cf0;">US</span></div>
+          <div class="ticker-stats">
+            <span>1 mention</span>
+            <span class="stat-bull">0 bull</span>
+            <span class="stat-bear">0 bear</span>
+            <span class="stat-neutral">1 neutral</span>
+          </div>
+        </a>
+        <a class="ticker-card" data-region="US" href="https://ritholtz.com/2026/08/how-wealth-is-created-in-america/" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">PLNT</span>
+            <span class="badge badge-neutral">neutral</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#7c6cf01a;color:#7c6cf0;">US</span></div>
+          <div class="ticker-stats">
+            <span>1 mention</span>
+            <span class="stat-bull">0 bull</span>
+            <span class="stat-bear">0 bear</span>
+            <span class="stat-neutral">1 neutral</span>
+          </div>
+        </a>
+        <a class="ticker-card" data-region="US" href="https://ritholtz.com/2026/08/10-wednesday-am-reads-385/" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">CDNS</span>
+            <span class="badge badge-neutral">neutral</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#7c6cf01a;color:#7c6cf0;">US</span></div>
+          <div class="ticker-stats">
+            <span>1 mention</span>
+            <span class="stat-bull">0 bull</span>
+            <span class="stat-bear">0 bear</span>
+            <span class="stat-neutral">1 neutral</span>
+          </div>
+        </a>
+        <a class="ticker-card" data-region="US" href="https://ritholtz.com/2026/08/10-wednesday-am-reads-385/" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">TSLA</span>
+            <span class="badge badge-bear">bearish</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#7c6cf01a;color:#7c6cf0;">US</span></div>
+          <div class="ticker-stats">
+            <span>1 mention</span>
+            <span class="stat-bull">0 bull</span>
+            <span class="stat-bear">1 bear</span>
+            <span class="stat-neutral">0 neutral</span>
+          </div>
+        </a>
+        <a class="ticker-card" data-region="US" href="https://ritholtz.com/2026/08/10-tuesday-am-reads-486/" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">BYD</span>
+            <span class="badge badge-neutral">neutral</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#7c6cf01a;color:#7c6cf0;">US</span></div>
+          <div class="ticker-stats">
+            <span>1 mention</span>
+            <span class="stat-bull">0 bull</span>
+            <span class="stat-bear">0 bear</span>
+            <span class="stat-neutral">1 neutral</span>
+          </div>
+        </a>
+        <a class="ticker-card" data-region="US" href="https://ritholtz.com/2026/08/10-sunday-reads-241/" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">GD</span>
+            <span class="badge badge-bear">bearish</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#7c6cf01a;color:#7c6cf0;">US</span></div>
+          <div class="ticker-stats">
+            <span>1 mention</span>
+            <span class="stat-bull">0 bull</span>
+            <span class="stat-bear">1 bear</span>
+            <span class="stat-neutral">0 neutral</span>
+          </div>
+        </a>
+        <a class="ticker-card" data-region="Europe" href="https://klementoninvesting.substack.com/p/if-this-is-true-the-hyperscalers" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">DELL</span>
+            <span class="badge badge-bull">bullish</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#0ea5b51a;color:#0ea5b5;">Europe</span></div>
+          <div class="ticker-stats">
+            <span>1 mention</span>
+            <span class="stat-bull">1 bull</span>
+            <span class="stat-bear">0 bear</span>
+            <span class="stat-neutral">0 neutral</span>
+          </div>
+        </a></div>
+
+  <h2>Monthly <span class="window-tag">last 28 days</span></h2>
+  <div class="ticker-grid">
+        <a class="ticker-card" data-region="Europe US US-legacy" href="https://klementoninvesting.substack.com/p/if-this-is-true-the-hyperscalers" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">AAPL</span>
+            <span class="badge badge-bull">bullish</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#0ea5b51a;color:#0ea5b5;">Europe</span><span class="region-tag" style="background:#7c6cf01a;color:#7c6cf0;">US</span><span class="region-tag" style="background:#7c6cf01a;color:#7c6cf0;">US-legacy</span></div>
+          <div class="ticker-stats">
+            <span>3 mentions</span>
+            <span class="stat-bull">1 bull</span>
+            <span class="stat-bear">0 bear</span>
+            <span class="stat-neutral">2 neutral</span>
+          </div>
+        </a>
+        <a class="ticker-card" data-region="US" href="https://ritholtz.com/2026/08/10-sunday-reads-241/" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">INTC</span>
+            <span class="badge badge-neutral">neutral</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#7c6cf01a;color:#7c6cf0;">US</span></div>
+          <div class="ticker-stats">
+            <span>3 mentions</span>
+            <span class="stat-bull">0 bull</span>
+            <span class="stat-bear">0 bear</span>
+            <span class="stat-neutral">3 neutral</span>
+          </div>
+        </a>
+        <a class="ticker-card" data-region="Europe US-legacy" href="https://klementoninvesting.substack.com/p/if-this-is-true-the-hyperscalers" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">GOOGL</span>
+            <span class="badge badge-neutral">neutral</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#0ea5b51a;color:#0ea5b5;">Europe</span><span class="region-tag" style="background:#7c6cf01a;color:#7c6cf0;">US-legacy</span></div>
+          <div class="ticker-stats">
+            <span>2 mentions</span>
+            <span class="stat-bull">0 bull</span>
+            <span class="stat-bear">0 bear</span>
+            <span class="stat-neutral">2 neutral</span>
+          </div>
+        </a>
+        <a class="ticker-card" data-region="US" href="https://ritholtz.com/2026/08/10-wednesday-am-reads-385/" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">MCD</span>
+            <span class="badge badge-bear">bearish</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#7c6cf01a;color:#7c6cf0;">US</span></div>
+          <div class="ticker-stats">
+            <span>2 mentions</span>
+            <span class="stat-bull">0 bull</span>
+            <span class="stat-bear">1 bear</span>
+            <span class="stat-neutral">1 neutral</span>
+          </div>
+        </a>
+        <a class="ticker-card" data-region="Europe US" href="https://klementoninvesting.substack.com/p/if-this-is-true-the-hyperscalers" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">NVDA</span>
+            <span class="badge badge-bear">bearish</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#0ea5b51a;color:#0ea5b5;">Europe</span><span class="region-tag" style="background:#7c6cf01a;color:#7c6cf0;">US</span></div>
+          <div class="ticker-stats">
+            <span>2 mentions</span>
+            <span class="stat-bull">0 bull</span>
+            <span class="stat-bear">2 bear</span>
+            <span class="stat-neutral">0 neutral</span>
+          </div>
+        </a>
+        <a class="ticker-card" data-region="US-legacy" href="https://ritholtz.com/2026/08/mib-filippo-gori/" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">JPM</span>
+            <span class="badge badge-neutral">neutral</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#7c6cf01a;color:#7c6cf0;">US-legacy</span></div>
+          <div class="ticker-stats">
+            <span>1 mention</span>
+            <span class="stat-bull">0 bull</span>
+            <span class="stat-bear">0 bear</span>
+            <span class="stat-neutral">1 neutral</span>
+          </div>
+        </a>
+        <a class="ticker-card" data-region="US-legacy" href="https://ritholtz.com/2026/08/10-monday-am-reads-488/" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">BLK</span>
+            <span class="badge badge-neutral">neutral</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#7c6cf01a;color:#7c6cf0;">US-legacy</span></div>
+          <div class="ticker-stats">
+            <span>1 mention</span>
+            <span class="stat-bull">0 bull</span>
+            <span class="stat-bear">0 bear</span>
+            <span class="stat-neutral">1 neutral</span>
+          </div>
+        </a>
+        <a class="ticker-card" data-region="US-legacy" href="https://ritholtz.com/2026/08/transcript-ankur-crawford/" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">SPOT</span>
+            <span class="badge badge-neutral">neutral</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#7c6cf01a;color:#7c6cf0;">US-legacy</span></div>
+          <div class="ticker-stats">
+            <span>1 mention</span>
+            <span class="stat-bull">0 bull</span>
+            <span class="stat-bear">0 bear</span>
+            <span class="stat-neutral">1 neutral</span>
+          </div>
+        </a>
+        <a class="ticker-card" data-region="US" href="https://ritholtz.com/2026/08/how-wealth-is-created-in-america/" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">MSFT</span>
+            <span class="badge badge-neutral">neutral</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#7c6cf01a;color:#7c6cf0;">US</span></div>
+          <div class="ticker-stats">
+            <span>1 mention</span>
+            <span class="stat-bull">0 bull</span>
+            <span class="stat-bear">0 bear</span>
+            <span class="stat-neutral">1 neutral</span>
+          </div>
+        </a>
+        <a class="ticker-card" data-region="US" href="https://ritholtz.com/2026/08/how-wealth-is-created-in-america/" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">BRK.B</span>
+            <span class="badge badge-neutral">neutral</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#7c6cf01a;color:#7c6cf0;">US</span></div>
+          <div class="ticker-stats">
+            <span>1 mention</span>
+            <span class="stat-bull">0 bull</span>
+            <span class="stat-bear">0 bear</span>
+            <span class="stat-neutral">1 neutral</span>
+          </div>
+        </a>
+        <a class="ticker-card" data-region="US" href="https://ritholtz.com/2026/08/how-wealth-is-created-in-america/" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">NKE</span>
+            <span class="badge badge-neutral">neutral</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#7c6cf01a;color:#7c6cf0;">US</span></div>
+          <div class="ticker-stats">
+            <span>1 mention</span>
+            <span class="stat-bull">0 bull</span>
+            <span class="stat-bear">0 bear</span>
+            <span class="stat-neutral">1 neutral</span>
+          </div>
+        </a>
+        <a class="ticker-card" data-region="US" href="https://ritholtz.com/2026/08/how-wealth-is-created-in-america/" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">PLNT</span>
+            <span class="badge badge-neutral">neutral</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#7c6cf01a;color:#7c6cf0;">US</span></div>
+          <div class="ticker-stats">
+            <span>1 mention</span>
+            <span class="stat-bull">0 bull</span>
+            <span class="stat-bear">0 bear</span>
+            <span class="stat-neutral">1 neutral</span>
+          </div>
+        </a>
+        <a class="ticker-card" data-region="US" href="https://ritholtz.com/2026/08/10-wednesday-am-reads-385/" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">CDNS</span>
+            <span class="badge badge-neutral">neutral</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#7c6cf01a;color:#7c6cf0;">US</span></div>
+          <div class="ticker-stats">
+            <span>1 mention</span>
+            <span class="stat-bull">0 bull</span>
+            <span class="stat-bear">0 bear</span>
+            <span class="stat-neutral">1 neutral</span>
+          </div>
+        </a>
+        <a class="ticker-card" data-region="US" href="https://ritholtz.com/2026/08/10-wednesday-am-reads-385/" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">TSLA</span>
+            <span class="badge badge-bear">bearish</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#7c6cf01a;color:#7c6cf0;">US</span></div>
+          <div class="ticker-stats">
+            <span>1 mention</span>
+            <span class="stat-bull">0 bull</span>
+            <span class="stat-bear">1 bear</span>
+            <span class="stat-neutral">0 neutral</span>
+          </div>
+        </a>
+        <a class="ticker-card" data-region="US" href="https://ritholtz.com/2026/08/10-tuesday-am-reads-486/" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">BYD</span>
+            <span class="badge badge-neutral">neutral</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#7c6cf01a;color:#7c6cf0;">US</span></div>
+          <div class="ticker-stats">
+            <span>1 mention</span>
+            <span class="stat-bull">0 bull</span>
+            <span class="stat-bear">0 bear</span>
+            <span class="stat-neutral">1 neutral</span>
+          </div>
+        </a>
+        <a class="ticker-card" data-region="US" href="https://ritholtz.com/2026/08/10-sunday-reads-241/" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">GD</span>
+            <span class="badge badge-bear">bearish</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#7c6cf01a;color:#7c6cf0;">US</span></div>
+          <div class="ticker-stats">
+            <span>1 mention</span>
+            <span class="stat-bull">0 bull</span>
+            <span class="stat-bear">1 bear</span>
+            <span class="stat-neutral">0 neutral</span>
+          </div>
+        </a>
+        <a class="ticker-card" data-region="Europe" href="https://klementoninvesting.substack.com/p/if-this-is-true-the-hyperscalers" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">DELL</span>
+            <span class="badge badge-bull">bullish</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#0ea5b51a;color:#0ea5b5;">Europe</span></div>
+          <div class="ticker-stats">
+            <span>1 mention</span>
+            <span class="stat-bull">1 bull</span>
+            <span class="stat-bear">0 bear</span>
+            <span class="stat-neutral">0 neutral</span>
+          </div>
+        </a>
+        <a class="ticker-card" data-region="Asia" href="https://bursadummy.blogspot.com/2026/08/my-portfolio-jul26.html" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">MI</span>
+            <span class="badge badge-bull">bullish</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#e0862a1a;color:#e0862a;">Asia</span></div>
+          <div class="ticker-stats">
+            <span>1 mention</span>
+            <span class="stat-bull">1 bull</span>
+            <span class="stat-bear">0 bear</span>
+            <span class="stat-neutral">0 neutral</span>
+          </div>
+        </a>
+        <a class="ticker-card" data-region="Asia" href="https://bursadummy.blogspot.com/2026/08/my-portfolio-jul26.html" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">EUPE</span>
+            <span class="badge badge-bear">bearish</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#e0862a1a;color:#e0862a;">Asia</span></div>
+          <div class="ticker-stats">
+            <span>1 mention</span>
+            <span class="stat-bull">0 bull</span>
+            <span class="stat-bear">1 bear</span>
+            <span class="stat-neutral">0 neutral</span>
+          </div>
+        </a>
+        <a class="ticker-card" data-region="Asia" href="https://bursadummy.blogspot.com/2026/08/my-portfolio-jul26.html" target="_blank" rel="noopener">
+          <div class="ticker-card-top">
+            <span class="ticker-symbol">AAGB</span>
+            <span class="badge badge-bear">bearish</span>
+          </div>
+          <div class="region-row"><span class="region-tag" style="background:#e0862a1a;color:#e0862a;">Asia</span></div>
+          <div class="ticker-stats">
+            <span>1 mention</span>
+            <span class="stat-bull">0 bull</span>
+            <span class="stat-bear">1 bear</span>
+            <span class="stat-neutral">0 neutral</span>
+          </div>
+        </a></div>
+
+  <div class="footer">
+    This is a fan-built information aggregation tool tracking public posts
+    from multiple independent market commentators across regions:
+    <ul><li>The Big Picture (Barry Ritholtz) (US) — <a href="https://ritholtz.com" target="_blank" rel="noopener">ritholtz.com</a></li><li>Klement on Investing (Europe) — <a href="https://klementoninvesting.substack.com" target="_blank" rel="noopener">klementoninvesting.substack.com</a></li><li>Bursa Dummy (Asia) — <a href="https://bursadummy.blogspot.com" target="_blank" rel="noopener">bursadummy.blogspot.com</a></li><li>SmallCaps.co.za (Africa) — <a href="https://smallcaps.co.za" target="_blank" rel="noopener">smallcaps.co.za</a></li></ul>
+    Not affiliated with any of the above. Stance labels are AI-inferred and
+    may be inaccurate. Not investment advice - always verify against the
+    original source posts and consult a licensed financial advisor.
+  </div>
+
+  <script>
+    (function() {
+      var buttons = document.querySelectorAll('.region-btn');
+      var cards = document.querySelectorAll('.ticker-card');
+      buttons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          buttons.forEach(function(b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          var filter = btn.getAttribute('data-filter');
+          cards.forEach(function(card) {
+            if (filter === 'all') {
+              card.style.display = '';
+            } else {
+              var regions = (card.getAttribute('data-region') || '').split(' ');
+              card.style.display = regions.indexOf(filter) !== -1 ? '' : 'none';
+            }
+          });
+        });
+      });
+    })();
+  </script>
 </body>
 </html>

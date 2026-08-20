@@ -1,0 +1,3 @@
+data/mentions_backup.json
+scripts/__pycache__/
+*.pyc
