@@ -1359,7 +1359,43 @@
       "source_region": "Africa",
       "mentioned_at": "2025-05-13T09:22:06+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=360584",
+      "ticker": "COMP",
+      "stance": "bearish",
+      "reasoning": "Criticized for marketing practices that favor internal agent commissions over client interests.",
+      "text_excerpt": "10 Friday AM Reads\nMy end-of-week morningtrainWFH reads:\n•Why Does Everything Feel Like a Scam?: Hanna Horvath on the corrosive effect of price opacity. When you no longer know what anything is supposed to cost, every transaction starts to feel like a con. (Hanna Horvath)\n•The bond market is signal",
+      "source_url": "https://ritholtz.com/2026/08/10-friday-am-reads-512/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-08-21T10:30:32+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=360584",
+      "ticker": "BRK.A",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Friday AM Reads\nMy end-of-week morningtrainWFH reads:\n•Why Does Everything Feel Like a Scam?: Hanna Horvath on the corrosive effect of price opacity. When you no longer know what anything is supposed to cost, every transaction starts to feel like a con. (Hanna Horvath)\n•The bond market is signal",
+      "source_url": "https://ritholtz.com/2026/08/10-friday-am-reads-512/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-08-21T10:30:32+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=360584",
+      "ticker": "AMZN",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Friday AM Reads\nMy end-of-week morningtrainWFH reads:\n•Why Does Everything Feel Like a Scam?: Hanna Horvath on the corrosive effect of price opacity. When you no longer know what anything is supposed to cost, every transaction starts to feel like a con. (Hanna Horvath)\n•The bond market is signal",
+      "source_url": "https://ritholtz.com/2026/08/10-friday-am-reads-512/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-08-21T10:30:32+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-08-21T13:06:31.432949+00:00"
+  "last_updated": "2026-08-21T18:51:54.379960+00:00"
 }
