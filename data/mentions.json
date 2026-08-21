@@ -1287,7 +1287,79 @@
       "source_region": "Asia",
       "mentioned_at": "2026-01-05T14:46:00+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361232",
+      "ticker": "NYT",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "Negative. Yay!\nWell,thatwas no fun…\nI have been testing negative since the weekend; maybe it’s the availability heuristic talking, but I have been hearing about (many? some?) other people catching it. (See thisoverviewof the current single digit % surge)\nThe brain fog1is annoying, as is the FOM",
+      "source_url": "https://ritholtz.com/2026/08/negative-yay/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-08-17T20:00:08+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://smallcaps.co.za/?p=575",
+      "ticker": "CPI",
+      "stance": "neutral",
+      "reasoning": "Fairly valued given its high return on assets relative to peers.",
+      "text_excerpt": "Different View on South African Banking Stocks\nWith some of the banks on the JSE having recently reported and relatively large movements in their share prices, there has been a raft of articles discussing their different merits and valuations.\nFor example, despite the fact that Capitec put out strong numbers, the Capitec stoc",
+      "source_url": "https://smallcaps.co.za/2025/05/different-view-on-south-african-banking-stocks/",
+      "source_name": "SmallCaps.co.za",
+      "source_region": "Africa",
+      "mentioned_at": "2025-05-13T09:22:06+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://smallcaps.co.za/?p=575",
+      "ticker": "ABG",
+      "stance": "neutral",
+      "reasoning": "Fairly valued when accounting for its balance sheet returns.",
+      "text_excerpt": "Different View on South African Banking Stocks\nWith some of the banks on the JSE having recently reported and relatively large movements in their share prices, there has been a raft of articles discussing their different merits and valuations.\nFor example, despite the fact that Capitec put out strong numbers, the Capitec stoc",
+      "source_url": "https://smallcaps.co.za/2025/05/different-view-on-south-african-banking-stocks/",
+      "source_name": "SmallCaps.co.za",
+      "source_region": "Africa",
+      "mentioned_at": "2025-05-13T09:22:06+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://smallcaps.co.za/?p=575",
+      "ticker": "INP",
+      "stance": "neutral",
+      "reasoning": "Fairly valued, although significant UK exposure complicates valuation comparisons.",
+      "text_excerpt": "Different View on South African Banking Stocks\nWith some of the banks on the JSE having recently reported and relatively large movements in their share prices, there has been a raft of articles discussing their different merits and valuations.\nFor example, despite the fact that Capitec put out strong numbers, the Capitec stoc",
+      "source_url": "https://smallcaps.co.za/2025/05/different-view-on-south-african-banking-stocks/",
+      "source_name": "SmallCaps.co.za",
+      "source_region": "Africa",
+      "mentioned_at": "2025-05-13T09:22:06+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://smallcaps.co.za/?p=575",
+      "ticker": "FSR",
+      "stance": "neutral",
+      "reasoning": "Fairly valued relative to its balance sheet effectiveness.",
+      "text_excerpt": "Different View on South African Banking Stocks\nWith some of the banks on the JSE having recently reported and relatively large movements in their share prices, there has been a raft of articles discussing their different merits and valuations.\nFor example, despite the fact that Capitec put out strong numbers, the Capitec stoc",
+      "source_url": "https://smallcaps.co.za/2025/05/different-view-on-south-african-banking-stocks/",
+      "source_name": "SmallCaps.co.za",
+      "source_region": "Africa",
+      "mentioned_at": "2025-05-13T09:22:06+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://smallcaps.co.za/?p=575",
+      "ticker": "SBK",
+      "stance": "neutral",
+      "reasoning": "Fairly valued relative to its balance sheet effectiveness.",
+      "text_excerpt": "Different View on South African Banking Stocks\nWith some of the banks on the JSE having recently reported and relatively large movements in their share prices, there has been a raft of articles discussing their different merits and valuations.\nFor example, despite the fact that Capitec put out strong numbers, the Capitec stoc",
+      "source_url": "https://smallcaps.co.za/2025/05/different-view-on-south-african-banking-stocks/",
+      "source_name": "SmallCaps.co.za",
+      "source_region": "Africa",
+      "mentioned_at": "2025-05-13T09:22:06+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-08-21T08:54:31.163800+00:00"
+  "last_updated": "2026-08-21T13:06:31.432949+00:00"
 }
