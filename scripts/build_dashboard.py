@@ -107,8 +107,9 @@ def render_cards(summary):
         # data-region carries ALL regions this ticker appeared under, space
         # separated, so the JS filter can match on any of them.
         data_region = " ".join(sorted(stats["regions"]))
+        detail_url = f"tickers/{safe_filename(ticker)}.html"
         cards += f"""
-        <a class="ticker-card" data-region="{data_region}" href="{stats['latest_url']}" target="_blank" rel="noopener">
+        <a class="ticker-card" data-region="{data_region}" href="{detail_url}">
           <div class="ticker-card-top">
             <span class="ticker-symbol">{ticker}</span>
             {stance_badge(stats)}
@@ -131,6 +132,181 @@ def render_footer_sources():
     return items
 
 
+def safe_filename(ticker):
+    """Ticker symbols like BRK.B contain characters unsafe for filenames.
+    Replace non-alphanumeric chars with underscore."""
+    return "".join(c if c.isalnum() else "_" for c in ticker)
+
+
+def render_ticker_detail_page(ticker, ticker_mentions):
+    """Generates the actual per-ticker detail page: bull case bullets,
+    risks bullets (both built from real extracted 'reasoning' text, not
+    invented), and the full mention list. NO price chart / 'vs prior
+    close' data — that requires a separate price-API integration this
+    build does NOT include."""
+    ticker_mentions_sorted = sorted(
+        ticker_mentions, key=lambda m: m.get("mentioned_at", ""), reverse=True
+    )
+
+    bull_count = sum(1 for m in ticker_mentions if m["stance"] == "bullish")
+    bear_count = sum(1 for m in ticker_mentions if m["stance"] == "bearish")
+    neutral_count = sum(1 for m in ticker_mentions if m["stance"] == "neutral")
+
+    first_mention = min(m.get("mentioned_at", "") for m in ticker_mentions)
+    latest_mention = max(m.get("mentioned_at", "") for m in ticker_mentions)
+
+    def fmt_date(iso_str):
+        dt = parse_mentioned_at(iso_str)
+        return dt.strftime("%b %d, %Y")
+
+    # Bull case / Risks are built ONLY from mentions that actually have a
+    # non-empty "reasoning" field — older records (pre-reasoning-field)
+    # and mentions where the LLM found no clear reason are correctly
+    # excluded, not padded with invented text.
+    bull_points = [
+        m for m in ticker_mentions_sorted
+        if m["stance"] == "bullish" and m.get("reasoning")
+    ]
+    bear_points = [
+        m for m in ticker_mentions_sorted
+        if m["stance"] == "bearish" and m.get("reasoning")
+    ]
+
+    def render_points(points):
+        if not points:
+            return '<p class="empty">No specific reasoning captured yet for this stance.</p>'
+        html = ""
+        for m in points:
+            html += f"""
+            <div class="point-row">
+              <span class="point-text">{m['reasoning']}</span>
+              <a href="{m.get('source_url', '#')}" target="_blank" rel="noopener" class="point-date">{fmt_date(m.get('mentioned_at', ''))} ↗</a>
+            </div>"""
+        return html
+
+    def render_all_posts(mentions):
+        html = ""
+        for m in mentions:
+            reasoning_html = f'<div class="post-reasoning">{m["reasoning"]}</div>' if m.get("reasoning") else ""
+            html += f"""
+            <div class="post-row">
+              <div class="post-top">
+                <span class="post-date">{fmt_date(m.get('mentioned_at', ''))}</span>
+                {stance_badge_solo(m['stance'])}
+                <span class="post-source">{m.get('source_name', 'Unknown source')} ({m.get('source_region', 'US-legacy')})</span>
+              </div>
+              {reasoning_html}
+              <a href="{m.get('source_url', '#')}" target="_blank" rel="noopener" class="post-link">View original post ↗</a>
+            </div>"""
+        return html
+
+    regions = sorted(set(m.get("source_region", "US-legacy") for m in ticker_mentions))
+    region_tags_html = "".join(
+        f'<span class="region-tag" style="background:{REGION_COLORS.get(r, "#8a8f98")}1a;color:{REGION_COLORS.get(r, "#8a8f98")};">{r}</span>'
+        for r in regions
+    )
+
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{ticker} - Big Picture Tracker</title>
+<style>
+  * {{ box-sizing: border-box; }}
+  body {{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 800px; margin: 0 auto; padding: 40px 24px 80px;
+    color: #17181c; background: #fafafa; line-height: 1.5;
+  }}
+  .back-link {{ font-size: 13px; color: #6b6f76; text-decoration: none; margin-bottom: 20px; display: inline-block; }}
+  .back-link:hover {{ color: #7c6cf0; }}
+  .ticker-header {{ display: flex; justify-content: space-between; align-items: flex-start; margin: 12px 0 6px; }}
+  h1 {{ font-size: 32px; font-weight: 800; }}
+  .meta {{ font-size: 12.5px; color: #8a8f98; text-align: right; }}
+  .region-row {{ display: flex; gap: 6px; margin: 10px 0 20px; }}
+  .region-tag {{ font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 10px; text-transform: uppercase; }}
+  .stat-summary {{ display: flex; gap: 20px; margin-bottom: 28px; font-size: 13px; color: #4a4738; }}
+  .stat-summary b {{ font-size: 16px; }}
+  .section-title {{ font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; color: #6b6f76; margin: 32px 0 12px; }}
+  .points-box {{ background: #fff; border: 1px solid #ececec; border-radius: 12px; padding: 16px 20px; }}
+  .points-box.bull {{ border-left: 4px solid #16a34a; }}
+  .points-box.bear {{ border-left: 4px solid #dc2626; }}
+  .point-row {{ display: flex; justify-content: space-between; align-items: baseline; padding: 8px 0; border-bottom: 1px solid #f1f1f1; font-size: 13.5px; }}
+  .point-row:last-child {{ border-bottom: none; }}
+  .point-date {{ font-size: 11px; color: #8a8f98; white-space: nowrap; margin-left: 12px; text-decoration: none; }}
+  .empty {{ color: #8a8f98; font-size: 13px; font-style: italic; }}
+  .post-row {{ background: #fff; border: 1px solid #ececec; border-radius: 10px; padding: 14px 18px; margin-bottom: 10px; }}
+  .post-top {{ display: flex; align-items: center; gap: 10px; font-size: 12px; color: #8a8f98; }}
+  .post-date {{ font-weight: 600; color: #17181c; }}
+  .post-reasoning {{ font-size: 13.5px; margin: 8px 0; color: #3a3830; }}
+  .post-link {{ font-size: 12px; color: #7c6cf0; text-decoration: none; }}
+  .badge {{ font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 8px; text-transform: uppercase; }}
+  .badge-bull {{ background: #e3f7ea; color: #16a34a; }}
+  .badge-bear {{ background: #fdeaea; color: #dc2626; }}
+  .badge-neutral {{ background: #f1f1f1; color: #6b6f76; }}
+  .disclaimer {{ margin-top: 40px; padding-top: 20px; border-top: 1px solid #ececec; font-size: 11.5px; color: #8a8f98; }}
+</style>
+</head>
+<body>
+  <a href="../index.html" class="back-link">← Back to dashboard</a>
+  <div class="ticker-header">
+    <h1>{ticker}</h1>
+    <div class="meta">First mention {fmt_date(first_mention)}<br>Latest mention {fmt_date(latest_mention)}</div>
+  </div>
+  <div class="region-row">{region_tags_html}</div>
+  <div class="stat-summary">
+    <div><b>{len(ticker_mentions)}</b> total mentions</div>
+    <div><b style="color:#16a34a">{bull_count}</b> bullish</div>
+    <div><b style="color:#dc2626">{bear_count}</b> bearish</div>
+    <div><b style="color:#6b6f76">{neutral_count}</b> neutral</div>
+  </div>
+
+  <div class="section-title">Bull Case</div>
+  <div class="points-box bull">{render_points(bull_points)}</div>
+
+  <div class="section-title">Risks Mentioned</div>
+  <div class="points-box bear">{render_points(bear_points)}</div>
+
+  <div class="section-title">All Mentions ({len(ticker_mentions)})</div>
+  {render_all_posts(ticker_mentions_sorted)}
+
+  <div class="disclaimer">
+    Stance and reasoning are AI-inferred from the original post text and
+    may be inaccurate. This is not investment advice. Always verify
+    against the original source, linked on every entry above.
+  </div>
+</body>
+</html>"""
+
+
+def stance_badge_solo(stance):
+    if stance == "bullish":
+        return '<span class="badge badge-bull">bullish</span>'
+    if stance == "bearish":
+        return '<span class="badge badge-bear">bearish</span>'
+    return '<span class="badge badge-neutral">neutral</span>'
+
+
+def build_all_ticker_pages(all_mentions):
+    """Groups ALL mentions (not just within a time window) by ticker and
+    writes one detail page per ticker to docs/tickers/{ticker}.html."""
+    by_ticker = defaultdict(list)
+    for m in all_mentions:
+        by_ticker[m["ticker"]].append(m)
+
+    tickers_dir = OUTPUT_FILE.parent / "tickers"
+    tickers_dir.mkdir(parents=True, exist_ok=True)
+
+    count = 0
+    for ticker, mentions in by_ticker.items():
+        filename = safe_filename(ticker) + ".html"
+        page_html = render_ticker_detail_page(ticker, mentions)
+        (tickers_dir / filename).write_text(page_html, encoding="utf-8")
+        count += 1
+    return count
+
+
 def render_html(dataset):
     all_mentions = dataset["mentions"]
     daily = summarize([m for m in all_mentions if within_days(m, 1)])
@@ -138,8 +314,11 @@ def render_html(dataset):
     monthly = summarize([m for m in all_mentions if within_days(m, 28)])
     total_mentions = len(all_mentions)
     total_tickers = len(set(m["ticker"] for m in all_mentions))
+    # Normalize "US-legacy" into "US" for the region COUNT stat only — it's
+    # not a real 5th region, just older records missing the region field.
+    # The card tags still show "US-LEGACY" separately, which is fine/useful.
     normalized_regions = set(
-        "US" if m.get("source_region", "US-legacy") == "US-legacy" else    m.get("source_region")
+        "US" if m.get("source_region", "US-legacy") == "US-legacy" else m.get("source_region")
         for m in all_mentions
     )
     total_regions = len(normalized_regions)
@@ -276,9 +455,12 @@ def render_html(dataset):
 
 def main():
     dataset = load_dataset()
+    all_mentions = dataset["mentions"]
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_FILE.write_text(render_html(dataset), encoding="utf-8")
     print(f"Dashboard written to {OUTPUT_FILE}")
+    ticker_page_count = build_all_ticker_pages(all_mentions)
+    print(f"Generated {ticker_page_count} ticker detail page(s) in {OUTPUT_FILE.parent}/tickers/")
 
 
 if __name__ == "__main__":

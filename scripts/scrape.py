@@ -78,10 +78,20 @@ ANTHROPIC_MODEL = "claude-haiku-4-5-20251001"  # backend extraction only — NOT
 
 EXTRACTION_PROMPT = """You are a financial text analyst. Read the article
 text below and extract every individual publicly-traded STOCK or COMPANY
-mentioned, along with the author's apparent stance toward it.
+mentioned, along with the author's apparent stance toward it and a SHORT
+reason for that stance.
 
 Return ONLY a JSON array, no other text, no markdown fences. Each element:
-{{"ticker": "AAPL", "stance": "bullish" | "bearish" | "neutral"}}
+{{"ticker": "AAPL", "stance": "bullish" | "bearish" | "neutral", "reasoning": "short paraphrased reason, under 15 words"}}
+
+Reasoning rules:
+- PARAPHRASE in your own words — never copy a sentence verbatim from the
+  article text
+- Keep it under 15 words, one specific point (not a vague summary like
+  "author discusses the company")
+- If the mention is truly neutral/factual with no stated reasoning
+  (e.g. just named in a list), use an empty string "" for reasoning
+  rather than inventing one
 
 DO NOT include:
 - Market indices (e.g. S&P 500, Nasdaq, ^GSPC, ^IXIC, KLCI as an index,
@@ -333,12 +343,14 @@ def main():
             for item in extracted:
                 ticker = item.get("ticker", "").upper().strip()
                 stance = item.get("stance", "neutral").lower().strip()
+                reasoning = item.get("reasoning", "").strip()
                 if not ticker or stance not in ("bullish", "bearish", "neutral"):
                     continue
                 new_mentions.append({
                     "source_id": entry_id,
                     "ticker": ticker,
                     "stance": stance,
+                    "reasoning": reasoning,
                     "text_excerpt": f"{title}\n{article_text[:280]}",
                     "source_url": link,
                     "source_name": source["name"],
