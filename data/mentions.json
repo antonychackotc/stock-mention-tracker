@@ -2451,7 +2451,103 @@
       "source_region": "US",
       "mentioned_at": "2026-08-22T10:30:27+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361480",
+      "ticker": "BRK.A",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "MiB: Alex Morris, “Buffett and Munger Unscripted”\n<span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"lazy lazy-hidden mce_SELRES_start\">﻿</span><span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"mce_SEL",
+      "source_url": "https://ritholtz.com/2026/08/mib-alex-morris/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-08-22T16:00:52+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361480",
+      "ticker": "FRFHF",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "MiB: Alex Morris, “Buffett and Munger Unscripted”\n<span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"lazy lazy-hidden mce_SELRES_start\">﻿</span><span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"mce_SEL",
+      "source_url": "https://ritholtz.com/2026/08/mib-alex-morris/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-08-22T16:00:52+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://smallcaps.co.za/?p=537",
+      "ticker": "SPP",
+      "stance": "bearish",
+      "reasoning": "Struggling with international expansion and losing franchisee momentum in foreign markets.",
+      "text_excerpt": "Why retailers suck at going offshore\nSpar Group (code: SPP) is the latest in a long line of South African retailers that have burnt their fingers trying to go offshore with their businesses.\nFrom Shoprite retreating from a range of African countries and Woolworths and Mr Price failing in Australia to Truworths’ cont",
+      "source_url": "https://smallcaps.co.za/2024/10/why-retailers-suck-at-going-offshore/",
+      "source_name": "SmallCaps.co.za",
+      "source_region": "Africa",
+      "mentioned_at": "2024-10-25T12:10:14+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://smallcaps.co.za/?p=537",
+      "ticker": "SHP",
+      "stance": "bullish",
+      "reasoning": "Highly successful local strategy effectively leveraging regional scale to build operational momentum.",
+      "text_excerpt": "Why retailers suck at going offshore\nSpar Group (code: SPP) is the latest in a long line of South African retailers that have burnt their fingers trying to go offshore with their businesses.\nFrom Shoprite retreating from a range of African countries and Woolworths and Mr Price failing in Australia to Truworths’ cont",
+      "source_url": "https://smallcaps.co.za/2024/10/why-retailers-suck-at-going-offshore/",
+      "source_name": "SmallCaps.co.za",
+      "source_region": "Africa",
+      "mentioned_at": "2024-10-25T12:10:14+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://smallcaps.co.za/?p=537",
+      "ticker": "WHL",
+      "stance": "bearish",
+      "reasoning": "Failed in Australian expansion attempt and forced to shut down offshore stores.",
+      "text_excerpt": "Why retailers suck at going offshore\nSpar Group (code: SPP) is the latest in a long line of South African retailers that have burnt their fingers trying to go offshore with their businesses.\nFrom Shoprite retreating from a range of African countries and Woolworths and Mr Price failing in Australia to Truworths’ cont",
+      "source_url": "https://smallcaps.co.za/2024/10/why-retailers-suck-at-going-offshore/",
+      "source_name": "SmallCaps.co.za",
+      "source_region": "Africa",
+      "mentioned_at": "2024-10-25T12:10:14+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://smallcaps.co.za/?p=537",
+      "ticker": "MRP",
+      "stance": "bearish",
+      "reasoning": "Unsuccessful global expansion attempt in the Australian retail market.",
+      "text_excerpt": "Why retailers suck at going offshore\nSpar Group (code: SPP) is the latest in a long line of South African retailers that have burnt their fingers trying to go offshore with their businesses.\nFrom Shoprite retreating from a range of African countries and Woolworths and Mr Price failing in Australia to Truworths’ cont",
+      "source_url": "https://smallcaps.co.za/2024/10/why-retailers-suck-at-going-offshore/",
+      "source_name": "SmallCaps.co.za",
+      "source_region": "Africa",
+      "mentioned_at": "2024-10-25T12:10:14+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://smallcaps.co.za/?p=537",
+      "ticker": "TRU",
+      "stance": "bearish",
+      "reasoning": "Ongoing difficulties attracting UK customers and generating sales after foreign acquisitions.",
+      "text_excerpt": "Why retailers suck at going offshore\nSpar Group (code: SPP) is the latest in a long line of South African retailers that have burnt their fingers trying to go offshore with their businesses.\nFrom Shoprite retreating from a range of African countries and Woolworths and Mr Price failing in Australia to Truworths’ cont",
+      "source_url": "https://smallcaps.co.za/2024/10/why-retailers-suck-at-going-offshore/",
+      "source_name": "SmallCaps.co.za",
+      "source_region": "Africa",
+      "mentioned_at": "2024-10-25T12:10:14+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://smallcaps.co.za/?p=537",
+      "ticker": "PIK",
+      "stance": "bearish",
+      "reasoning": "Facing severe business model challenges due to a lack of growth.",
+      "text_excerpt": "Why retailers suck at going offshore\nSpar Group (code: SPP) is the latest in a long line of South African retailers that have burnt their fingers trying to go offshore with their businesses.\nFrom Shoprite retreating from a range of African countries and Woolworths and Mr Price failing in Australia to Truworths’ cont",
+      "source_url": "https://smallcaps.co.za/2024/10/why-retailers-suck-at-going-offshore/",
+      "source_name": "SmallCaps.co.za",
+      "source_region": "Africa",
+      "mentioned_at": "2024-10-25T12:10:14+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-08-22T17:30:30.023986+00:00"
+  "last_updated": "2026-08-22T19:31:38.251962+00:00"
 }
