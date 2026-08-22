@@ -1515,7 +1515,91 @@
       "source_region": "Asia",
       "mentioned_at": "2026-03-05T11:40:00+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://smallcaps.co.za/?p=614",
+      "ticker": "BRO",
+      "stance": "bullish",
+      "reasoning": "Stock sell-off is an overreaction because AI cannot handle complex insurance needs.",
+      "text_excerpt": "What AI can & cannot do\nOver many conversations and watching tumultuous market movements whipsaw sectors, I have come to the conclusion that a lot of people have a lot of opinions about Artificial Intelligence (AI) without actually understanding either these sectors or even the technology.\nFirstly, what",
+      "source_url": "https://smallcaps.co.za/2026/03/what-ai-can-cannot-do/",
+      "source_name": "SmallCaps.co.za",
+      "source_region": "Africa",
+      "mentioned_at": "2026-03-05T14:26:46+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://smallcaps.co.za/?p=614",
+      "ticker": "AJG",
+      "stance": "bullish",
+      "reasoning": "AI threat fears are overblown since complex risks still require human brokers.",
+      "text_excerpt": "What AI can & cannot do\nOver many conversations and watching tumultuous market movements whipsaw sectors, I have come to the conclusion that a lot of people have a lot of opinions about Artificial Intelligence (AI) without actually understanding either these sectors or even the technology.\nFirstly, what",
+      "source_url": "https://smallcaps.co.za/2026/03/what-ai-can-cannot-do/",
+      "source_name": "SmallCaps.co.za",
+      "source_region": "Africa",
+      "mentioned_at": "2026-03-05T14:26:46+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://smallcaps.co.za/?p=614",
+      "ticker": "SCHW",
+      "stance": "bullish",
+      "reasoning": "AI tools cannot replace human financial advisors due to hallucination and liability risks.",
+      "text_excerpt": "What AI can & cannot do\nOver many conversations and watching tumultuous market movements whipsaw sectors, I have come to the conclusion that a lot of people have a lot of opinions about Artificial Intelligence (AI) without actually understanding either these sectors or even the technology.\nFirstly, what",
+      "source_url": "https://smallcaps.co.za/2026/03/what-ai-can-cannot-do/",
+      "source_name": "SmallCaps.co.za",
+      "source_region": "Africa",
+      "mentioned_at": "2026-03-05T14:26:46+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://smallcaps.co.za/?p=614",
+      "ticker": "RJF",
+      "stance": "bullish",
+      "reasoning": "Market sell-off is unjustified as clients need trustworthy human advisors for complex planning.",
+      "text_excerpt": "What AI can & cannot do\nOver many conversations and watching tumultuous market movements whipsaw sectors, I have come to the conclusion that a lot of people have a lot of opinions about Artificial Intelligence (AI) without actually understanding either these sectors or even the technology.\nFirstly, what",
+      "source_url": "https://smallcaps.co.za/2026/03/what-ai-can-cannot-do/",
+      "source_name": "SmallCaps.co.za",
+      "source_region": "Africa",
+      "mentioned_at": "2026-03-05T14:26:46+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://smallcaps.co.za/?p=614",
+      "ticker": "SF",
+      "stance": "bullish",
+      "reasoning": "AI replacement concerns are exaggerated because bespoke financial advisory services still require humans.",
+      "text_excerpt": "What AI can & cannot do\nOver many conversations and watching tumultuous market movements whipsaw sectors, I have come to the conclusion that a lot of people have a lot of opinions about Artificial Intelligence (AI) without actually understanding either these sectors or even the technology.\nFirstly, what",
+      "source_url": "https://smallcaps.co.za/2026/03/what-ai-can-cannot-do/",
+      "source_name": "SmallCaps.co.za",
+      "source_region": "Africa",
+      "mentioned_at": "2026-03-05T14:26:46+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://smallcaps.co.za/?p=614",
+      "ticker": "ACN",
+      "stance": "bullish",
+      "reasoning": "Author bought shares expecting businesses to need consultants to implement AI technology.",
+      "text_excerpt": "What AI can & cannot do\nOver many conversations and watching tumultuous market movements whipsaw sectors, I have come to the conclusion that a lot of people have a lot of opinions about Artificial Intelligence (AI) without actually understanding either these sectors or even the technology.\nFirstly, what",
+      "source_url": "https://smallcaps.co.za/2026/03/what-ai-can-cannot-do/",
+      "source_name": "SmallCaps.co.za",
+      "source_region": "Africa",
+      "mentioned_at": "2026-03-05T14:26:46+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://smallcaps.co.za/?p=589",
+      "ticker": "GOOGL",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "IFRS killed the Financial Ratio\nMany investors are not accountants. Many accountants are not investors. And, yet, the latter produces what the former reads, and the former relies upon what the later produces to make investment decisions.\nWhat if they are no longer speaking thesamelanguage?\nIf we look at the cha",
+      "source_url": "https://smallcaps.co.za/2025/09/ifrs-killed-the-financial-ratio/",
+      "source_name": "SmallCaps.co.za",
+      "source_region": "Africa",
+      "mentioned_at": "2025-09-19T14:41:12+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-08-21T19:33:50.203597+00:00"
+  "last_updated": "2026-08-22T01:46:04.182651+00:00"
 }
