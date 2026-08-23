@@ -2679,7 +2679,79 @@
       "source_region": "Asia",
       "mentioned_at": "2025-09-07T10:00:00+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=360602",
+      "ticker": "META",
+      "stance": "bearish",
+      "reasoning": "Smart glasses product is facilitating invasive harassment and bullying among teenagers.",
+      "text_excerpt": "10 Sunday Reads\nAvert your eyes! MySunday morninglook at incompetency, corruption and policy failures:\n•Why does everything feel like a scam?Hanna Horvath on losing the plot in an economy of junk fees and shrinking portions — $35 for four pieces of tortellini was the breaking point for a writer ",
+      "source_url": "https://ritholtz.com/2026/08/10-sunday-reads-242/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-08-23T10:30:52+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=360602",
+      "ticker": "PLTR",
+      "stance": "bearish",
+      "reasoning": "Implicated in receiving illegally obtained Medicaid records to assist government tracking.",
+      "text_excerpt": "10 Sunday Reads\nAvert your eyes! MySunday morninglook at incompetency, corruption and policy failures:\n•Why does everything feel like a scam?Hanna Horvath on losing the plot in an economy of junk fees and shrinking portions — $35 for four pieces of tortellini was the breaking point for a writer ",
+      "source_url": "https://ritholtz.com/2026/08/10-sunday-reads-242/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-08-23T10:30:52+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=360602",
+      "ticker": "AXON",
+      "stance": "bearish",
+      "reasoning": "Manipulated clinical trial data to promote an ineffective drug for financial gain.",
+      "text_excerpt": "10 Sunday Reads\nAvert your eyes! MySunday morninglook at incompetency, corruption and policy failures:\n•Why does everything feel like a scam?Hanna Horvath on losing the plot in an economy of junk fees and shrinking portions — $35 for four pieces of tortellini was the breaking point for a writer ",
+      "source_url": "https://ritholtz.com/2026/08/10-sunday-reads-242/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-08-23T10:30:52+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=360602",
+      "ticker": "JPM",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Sunday Reads\nAvert your eyes! MySunday morninglook at incompetency, corruption and policy failures:\n•Why does everything feel like a scam?Hanna Horvath on losing the plot in an economy of junk fees and shrinking portions — $35 for four pieces of tortellini was the breaking point for a writer ",
+      "source_url": "https://ritholtz.com/2026/08/10-sunday-reads-242/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-08-23T10:30:52+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=360602",
+      "ticker": "AMZN",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Sunday Reads\nAvert your eyes! MySunday morninglook at incompetency, corruption and policy failures:\n•Why does everything feel like a scam?Hanna Horvath on losing the plot in an economy of junk fees and shrinking portions — $35 for four pieces of tortellini was the breaking point for a writer ",
+      "source_url": "https://ritholtz.com/2026/08/10-sunday-reads-242/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-08-23T10:30:52+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=360602",
+      "ticker": "BRK.A",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Sunday Reads\nAvert your eyes! MySunday morninglook at incompetency, corruption and policy failures:\n•Why does everything feel like a scam?Hanna Horvath on losing the plot in an economy of junk fees and shrinking portions — $35 for four pieces of tortellini was the breaking point for a writer ",
+      "source_url": "https://ritholtz.com/2026/08/10-sunday-reads-242/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-08-23T10:30:52+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-08-23T08:44:27.074987+00:00"
+  "last_updated": "2026-08-23T15:33:13.246165+00:00"
 }
