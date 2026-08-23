@@ -2559,7 +2559,19 @@
       "source_region": "Asia",
       "mentioned_at": "2025-09-15T03:44:00+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://smallcaps.co.za/?p=522",
+      "ticker": "SNV",
+      "stance": "bullish",
+      "reasoning": "Solid organic client growth and attractive valuation despite temporary freight rate headwinds.",
+      "text_excerpt": "Santova: Not Smooth Sailing (Yet)\nAn unappreciated aspect of active investing is that it sometimes it looks somewhat “passive”. Instead of trading in and out of stocks, an active investor is constantly checking and confirming their views. Assuming the facts and their opinion remain the same, their investments rem",
+      "source_url": "https://smallcaps.co.za/2024/06/santova-not-smooth-sailing-yet/",
+      "source_name": "SmallCaps.co.za",
+      "source_region": "Africa",
+      "mentioned_at": "2024-06-18T09:11:19+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-08-22T23:30:35.170252+00:00"
+  "last_updated": "2026-08-23T07:43:01.688168+00:00"
 }
