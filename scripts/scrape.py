@@ -360,19 +360,33 @@ def main():
                 })
             print(f"  extracted {len(extracted)} mention(s): {title[:60]}")
 
+    combined_mentions = existing_mentions + new_mentions
+    output = {
+        "mentions": combined_mentions,
+        "last_updated": datetime.now(timezone.utc).isoformat(),
+    }
+
+    os.makedirs(os.path.dirname(DATA_FILE), exist_ok=True)
+    with open(DATA_FILE, "w", encoding="utf-8") as f:
+        json.dump(output, f, indent=2, ensure_ascii=False)
+
+    # ALSO publish a copy inside docs/ — GitHub Pages only serves files
+    # under docs/, and data/mentions.json (repo root) was NOT publicly
+    # reachable, causing a 404 for every live agent query. This write
+    # happens EVERY run (not just when new mentions exist) so the public
+    # copy always exists and stays in sync, even on a run that finds
+    # nothing new.
+    public_copy_path = "docs/data/mentions.json"
+    os.makedirs(os.path.dirname(public_copy_path), exist_ok=True)
+    with open(public_copy_path, "w", encoding="utf-8") as f:
+        json.dump(output, f, indent=2, ensure_ascii=False)
+
     if new_mentions:
-        combined_mentions = existing_mentions + new_mentions
-        output = {
-            "mentions": combined_mentions,
-            "last_updated": datetime.now(timezone.utc).isoformat(),
-        }
-        os.makedirs(os.path.dirname(DATA_FILE), exist_ok=True)
-        with open(DATA_FILE, "w", encoding="utf-8") as f:
-            json.dump(output, f, indent=2, ensure_ascii=False)
         print(f"Wrote {len(new_mentions)} new mention(s) to {DATA_FILE} "
               f"(total now {len(combined_mentions)})")
     else:
         print("No new mentions this run.")
+    print(f"Published public copy to {public_copy_path}")
 
 
 if __name__ == "__main__":
