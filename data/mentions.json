@@ -3051,7 +3051,55 @@
       "source_region": "Africa",
       "mentioned_at": "2024-10-31T12:10:36+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=360542",
+      "ticker": "COMP",
+      "stance": "bearish",
+      "reasoning": "Facing a federal class-action lawsuit alleging illegal monopoly practices.",
+      "text_excerpt": "10 Monday AM Reads\nMy back-to-work morningtrainWFH reads:\n•Broadening the Base: more than 60% of stocks beat the S&P 500 in June and July: A natural outcome of rising market breadth has been the rise in dispersion, which measures how differently stocks are performing relative to each other. S&P 500",
+      "source_url": "https://ritholtz.com/2026/08/10-monday-am-reads-489/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-08-24T10:30:29+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=360542",
+      "ticker": "BYDDY",
+      "stance": "bullish",
+      "reasoning": "Rapidly expanding its dominance into global shipping markets.",
+      "text_excerpt": "10 Monday AM Reads\nMy back-to-work morningtrainWFH reads:\n•Broadening the Base: more than 60% of stocks beat the S&P 500 in June and July: A natural outcome of rising market breadth has been the rise in dispersion, which measures how differently stocks are performing relative to each other. S&P 500",
+      "source_url": "https://ritholtz.com/2026/08/10-monday-am-reads-489/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-08-24T10:30:29+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=360542",
+      "ticker": "BRK.A",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Monday AM Reads\nMy back-to-work morningtrainWFH reads:\n•Broadening the Base: more than 60% of stocks beat the S&P 500 in June and July: A natural outcome of rising market breadth has been the rise in dispersion, which measures how differently stocks are performing relative to each other. S&P 500",
+      "source_url": "https://ritholtz.com/2026/08/10-monday-am-reads-489/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-08-24T10:30:29+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=360542",
+      "ticker": "AMZN",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Monday AM Reads\nMy back-to-work morningtrainWFH reads:\n•Broadening the Base: more than 60% of stocks beat the S&P 500 in June and July: A natural outcome of rising market breadth has been the rise in dispersion, which measures how differently stocks are performing relative to each other. S&P 500",
+      "source_url": "https://ritholtz.com/2026/08/10-monday-am-reads-489/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-08-24T10:30:29+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-08-24T15:50:46.218437+00:00"
+  "last_updated": "2026-08-24T16:51:17.023939+00:00"
 }
