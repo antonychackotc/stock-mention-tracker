@@ -3279,7 +3279,19 @@
       "source_region": "US",
       "mentioned_at": "2026-08-25T10:30:45+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361587",
+      "ticker": "JPM",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "What’s Upsetting the Bond Market?\nThis question keeps coming up — firstCash, nowBonds— so it’s probably time to address why the fixed-income market seems to be having a rough go of it lately…\nThis has been a confusing couple of weeks (years?) for market watchers and bond investors: Yen interventions; announced (b",
+      "source_url": "https://ritholtz.com/2026/08/whats-upsetting-the-bond-market/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-08-25T16:00:20+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-08-25T17:40:02.924519+00:00"
+  "last_updated": "2026-08-25T18:53:03.053198+00:00"
 }
