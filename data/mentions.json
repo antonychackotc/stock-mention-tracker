@@ -3315,7 +3315,55 @@
       "source_region": "US",
       "mentioned_at": "2026-08-26T10:45:46+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361658",
+      "ticker": "PG",
+      "stance": "bullish",
+      "reasoning": "Generates real economic wealth and profits rather than relying on market speculation.",
+      "text_excerpt": "At The Money: Dividend Growth with David Bahnsen\n<span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"lazy lazy-hidden mce_SELRES_start\">﻿</span><span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"mce_SEL",
+      "source_url": "https://ritholtz.com/2026/08/atm-dividend-growth/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-08-26T21:00:52+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361658",
+      "ticker": "DKNG",
+      "stance": "bearish",
+      "reasoning": "Viewed as an instrument for speculative gambling instead of long-term economic investing.",
+      "text_excerpt": "At The Money: Dividend Growth with David Bahnsen\n<span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"lazy lazy-hidden mce_SELRES_start\">﻿</span><span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"mce_SEL",
+      "source_url": "https://ritholtz.com/2026/08/atm-dividend-growth/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-08-26T21:00:52+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361658",
+      "ticker": "AAPL",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "At The Money: Dividend Growth with David Bahnsen\n<span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"lazy lazy-hidden mce_SELRES_start\">﻿</span><span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"mce_SEL",
+      "source_url": "https://ritholtz.com/2026/08/atm-dividend-growth/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-08-26T21:00:52+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361658",
+      "ticker": "SPOT",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "At The Money: Dividend Growth with David Bahnsen\n<span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"lazy lazy-hidden mce_SELRES_start\">﻿</span><span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"mce_SEL",
+      "source_url": "https://ritholtz.com/2026/08/atm-dividend-growth/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-08-26T21:00:52+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-08-26T19:15:08.569482+00:00"
+  "last_updated": "2026-08-26T23:23:16.529033+00:00"
 }
