@@ -3291,7 +3291,31 @@
       "source_region": "US",
       "mentioned_at": "2026-08-25T16:00:20+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=360565",
+      "ticker": "BRK.A",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Wednesday AM Reads\nMy mid-week morningtrainWFH reads:\n•Are Inflation-Fighting Bonds on Sale?: I just bought more Treasury Inflation-Protected Securities. Plus, more questions for your adviser about private funds (and happy 96th birthday, Warren Buffett)  Jason Zweig on why he just bought more TIPS.",
+      "source_url": "https://ritholtz.com/2026/08/10-wednesday-am-reads-386/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-08-26T10:45:46+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=360565",
+      "ticker": "AMZN",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Wednesday AM Reads\nMy mid-week morningtrainWFH reads:\n•Are Inflation-Fighting Bonds on Sale?: I just bought more Treasury Inflation-Protected Securities. Plus, more questions for your adviser about private funds (and happy 96th birthday, Warren Buffett)  Jason Zweig on why he just bought more TIPS.",
+      "source_url": "https://ritholtz.com/2026/08/10-wednesday-am-reads-386/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-08-26T10:45:46+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-08-26T10:47:38.042242+00:00"
+  "last_updated": "2026-08-26T11:39:09.034591+00:00"
 }
