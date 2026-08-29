@@ -3375,7 +3375,43 @@
       "source_region": "US",
       "mentioned_at": "2026-08-28T10:30:19+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361814",
+      "ticker": "AB",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "MiB: David Booth, Dimensional Fund Advisors Founder & Chairman\n<span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"lazy lazy-hidden mce_SELRES_start\">﻿</span><span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"mce_SEL",
+      "source_url": "https://ritholtz.com/2026/08/mib-david-booth2/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-08-29T14:30:58+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361814",
+      "ticker": "EQH",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "MiB: David Booth, Dimensional Fund Advisors Founder & Chairman\n<span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"lazy lazy-hidden mce_SELRES_start\">﻿</span><span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"mce_SEL",
+      "source_url": "https://ritholtz.com/2026/08/mib-david-booth2/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-08-29T14:30:58+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361814",
+      "ticker": "JPM",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "MiB: David Booth, Dimensional Fund Advisors Founder & Chairman\n<span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"lazy lazy-hidden mce_SELRES_start\">﻿</span><span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"mce_SEL",
+      "source_url": "https://ritholtz.com/2026/08/mib-david-booth2/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-08-29T14:30:58+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-08-29T15:02:25.070169+00:00"
+  "last_updated": "2026-08-29T18:23:09.256372+00:00"
 }
