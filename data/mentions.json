@@ -3363,7 +3363,19 @@
       "source_region": "US",
       "mentioned_at": "2026-08-26T21:00:52+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361444",
+      "ticker": "AAPL",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Friday AM Reads\nMy end-of-week morning reads:\n•Current Issues in Forward Guidance: “Broader communication about reaction function remains essential as long as it is conditional, disciplined, and uncertainty aware. Risks should be clearly spelled out. Central banks may still seek to influence the",
+      "source_url": "https://ritholtz.com/2026/08/10-friday-am-reads-514/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-08-28T10:30:19+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-08-29T09:59:01.941635+00:00"
+  "last_updated": "2026-08-29T15:02:25.070169+00:00"
 }
