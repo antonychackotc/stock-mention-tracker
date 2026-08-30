@@ -3435,7 +3435,19 @@
       "source_region": "Asia",
       "mentioned_at": "2025-10-20T13:06:00+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=360595",
+      "ticker": "APO",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Weekend Reads\nThe weekend is here! Pour yourself a mug ofDanish Blendcoffee, grab a seat outside, and get ready for our longer-form weekend reads:\n•Who Pays the Cost When Americans Opt Out of Science?: Adam Frank thought science denial would hit a bottom once people experienced the direct cons",
+      "source_url": "https://ritholtz.com/2026/08/10-weekend-reads-106/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-08-29T10:30:28+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-08-30T00:11:20.359824+00:00"
+  "last_updated": "2026-08-30T06:32:43.551611+00:00"
 }
