@@ -3459,7 +3459,19 @@
       "source_region": "US",
       "mentioned_at": "2026-08-30T16:00:35+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=360543",
+      "ticker": "HMC",
+      "stance": "bullish",
+      "reasoning": "rapidly expanding its footprint and achieving success in the aviation sector",
+      "text_excerpt": "10 Monday AM Reads\nThe end of August? How didthathappen? Bid it farewell with my back-to-work morning reads:\n•Is the AI Capex Bubble About to Burst? What 250 Years of Market History Tell Us. The spending on artificial intelligence will end, but probably not when investors suspect it will.  (Barron’",
+      "source_url": "https://ritholtz.com/2026/08/10-monday-am-reads-490/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-08-31T10:30:27+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-08-31T13:35:03.933062+00:00"
+  "last_updated": "2026-08-31T19:59:24.652955+00:00"
 }
