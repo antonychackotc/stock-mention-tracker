@@ -3531,7 +3531,19 @@
       "source_region": "US",
       "mentioned_at": "2026-09-03T10:30:11+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=362095",
+      "ticker": "CME",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "Lessons from Victor Niederhoffer’s Life\nI have been fascinated byVictor Niederhofferfor decades.\nI first learned about him in a New Yorker piece titled “The Blow-Up Artist;” I was intrigued by his unique strategies and by his tendencies to repeatedly crash and burn. That led me to have him on thepodcast in 2017, after ",
+      "source_url": "https://ritholtz.com/2026/09/lessons-victor-niederhoffer/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-03T22:00:10+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-09-03T21:41:03.500204+00:00"
+  "last_updated": "2026-09-03T23:59:37.910364+00:00"
 }
