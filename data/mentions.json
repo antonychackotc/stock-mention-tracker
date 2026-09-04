@@ -3543,7 +3543,31 @@
       "source_region": "US",
       "mentioned_at": "2026-09-03T22:00:10+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=362140",
+      "ticker": "APO",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "Nobody Knows Anything, Rate Expectations Edition\nHeading out the door for the Labor Day weekend, with blue skies and 85° temperatures, I had to share a chart. It’s from the San Francisco Federal Reserve (via Torsten Slok of Apollo) and shows Wall Street expectations for Federal Reserve rate action.\nIt’s the perfect explainer fo",
+      "source_url": "https://ritholtz.com/2026/09/nobody-knows-anything-rate-expectations-edition/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-04T17:47:29+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=360586",
+      "ticker": "BLK",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Friday AM Reads\nMy end-of-week morning reads:\n​•Job Postings Show Early Signs of AI Automation Impact: The Dallas Fed finds the automation signal starting to show up in the listings data. (Dallas Fed)\n•The Death of the Safe Haven: How to Fix Your Bond Strategy as Yields Rise: The rise in U.S. Tr",
+      "source_url": "https://ritholtz.com/2026/09/10-friday-am-reads-513/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-04T10:30:34+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-09-04T18:20:15.853157+00:00"
+  "last_updated": "2026-09-04T21:23:34.839305+00:00"
 }
