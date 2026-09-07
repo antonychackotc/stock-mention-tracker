@@ -3699,7 +3699,19 @@
       "source_region": "US",
       "mentioned_at": "2026-09-05T15:30:11+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361948",
+      "ticker": "NYT",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Weekend Reads\nThree-day weekend! Pour yourself a mug ofDanish Blendcoffee, grab a seat outside, and get ready for our longer-form weekend reads:\n•How to build a cancer vaccine, and whether they will work this time: Typical cancer vaccines are vaccines given to you when you have cancer. These h",
+      "source_url": "https://ritholtz.com/2026/09/10-weekend-reads-107/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-05T10:30:13+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-09-06T23:47:26.005558+00:00"
+  "last_updated": "2026-09-07T04:25:35.863167+00:00"
 }
