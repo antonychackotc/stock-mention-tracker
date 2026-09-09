@@ -3795,7 +3795,19 @@
       "source_region": "US",
       "mentioned_at": "2026-09-08T10:30:42+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=362275",
+      "ticker": "APO",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "Corporate vs Treasury Debt Duration\nFrom 2008 through 2022, the 10-year Treasury yield was never above 3.25%; it spent nearly all of 2019–21 under 2%, while the 30-year bottomed at ~1% in March 2020.\nWhat an amazing opportunity to refinance debt at ultra-low rates!\nBut not every institutional debtor is that savvy. ",
+      "source_url": "https://ritholtz.com/2026/09/corp-v-treas-duration/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-08T12:30:58+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-09-09T00:06:08.060192+00:00"
+  "last_updated": "2026-09-09T05:55:34.534321+00:00"
 }
