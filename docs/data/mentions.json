@@ -3807,7 +3807,31 @@
       "source_region": "US",
       "mentioned_at": "2026-09-08T12:30:58+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361920",
+      "ticker": "COST",
+      "stance": "bullish",
+      "reasoning": "High compensation effectively retains experienced employees, driving faster checkout operations.",
+      "text_excerpt": "10 Wednesday AM Reads\nMy mid-week morning reads:\n•It’s a Concentrated World: The top 10 stocks in the S&P 500 make up almost 40% of the index. Each of the companies in the top 10 sport a market cap of $1 trillion or more. In fact, as of this writing, the 12 biggest companies all have market caps of $1",
+      "source_url": "https://ritholtz.com/2026/09/10-wednesday-am-reads-388/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-09T10:30:55+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361920",
+      "ticker": "APO",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Wednesday AM Reads\nMy mid-week morning reads:\n•It’s a Concentrated World: The top 10 stocks in the S&P 500 make up almost 40% of the index. Each of the companies in the top 10 sport a market cap of $1 trillion or more. In fact, as of this writing, the 12 biggest companies all have market caps of $1",
+      "source_url": "https://ritholtz.com/2026/09/10-wednesday-am-reads-388/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-09T10:30:55+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-09-09T19:43:29.553799+00:00"
+  "last_updated": "2026-09-09T22:28:19.024868+00:00"
 }
