@@ -3831,7 +3831,67 @@
       "source_region": "US",
       "mentioned_at": "2026-09-09T10:30:55+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=362379",
+      "ticker": "AAPL",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "At The Money: Becoming a “FinFluencer”\n<span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"lazy lazy-hidden mce_SELRES_start\">﻿</span><span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"mce_SEL",
+      "source_url": "https://ritholtz.com/2026/09/atm-finfluencer/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-09T22:00:30+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=362379",
+      "ticker": "GOOGL",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "At The Money: Becoming a “FinFluencer”\n<span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"lazy lazy-hidden mce_SELRES_start\">﻿</span><span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"mce_SEL",
+      "source_url": "https://ritholtz.com/2026/09/atm-finfluencer/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-09T22:00:30+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=362379",
+      "ticker": "META",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "At The Money: Becoming a “FinFluencer”\n<span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"lazy lazy-hidden mce_SELRES_start\">﻿</span><span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"mce_SEL",
+      "source_url": "https://ritholtz.com/2026/09/atm-finfluencer/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-09T22:00:30+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=362379",
+      "ticker": "MSFT",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "At The Money: Becoming a “FinFluencer”\n<span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"lazy lazy-hidden mce_SELRES_start\">﻿</span><span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"mce_SEL",
+      "source_url": "https://ritholtz.com/2026/09/atm-finfluencer/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-09T22:00:30+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=362379",
+      "ticker": "SPOT",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "At The Money: Becoming a “FinFluencer”\n<span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"lazy lazy-hidden mce_SELRES_start\">﻿</span><span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"mce_SEL",
+      "source_url": "https://ritholtz.com/2026/09/atm-finfluencer/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-09T22:00:30+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-09-10T01:01:13.729682+00:00"
+  "last_updated": "2026-09-10T05:53:18.294930+00:00"
 }
