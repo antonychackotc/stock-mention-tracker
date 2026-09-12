@@ -4071,7 +4071,31 @@
       "source_region": "US",
       "mentioned_at": "2026-09-12T10:30:46+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=362532",
+      "ticker": "AB",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "MiB: Seth Bernstein, Chief Executive Officer of AllianceBernstein\nThis week, I speak withSeth Bernstein, Chief Executive Officer ofAllianceBernstein(no relation). We discuss his tenure at JPMorgan Chase, where he was managing director and global head of Managed Solutions & Strategy at J.P. Morgan Asset Management. We also discuss understanding ",
+      "source_url": "https://ritholtz.com/2026/09/mib-seth-bernstein/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-12T14:00:50+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=362532",
+      "ticker": "JPM",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "MiB: Seth Bernstein, Chief Executive Officer of AllianceBernstein\nThis week, I speak withSeth Bernstein, Chief Executive Officer ofAllianceBernstein(no relation). We discuss his tenure at JPMorgan Chase, where he was managing director and global head of Managed Solutions & Strategy at J.P. Morgan Asset Management. We also discuss understanding ",
+      "source_url": "https://ritholtz.com/2026/09/mib-seth-bernstein/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-12T14:00:50+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-09-12T14:02:45.298753+00:00"
+  "last_updated": "2026-09-12T17:03:18.602155+00:00"
 }
