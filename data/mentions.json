@@ -4095,7 +4095,55 @@
       "source_region": "US",
       "mentioned_at": "2026-09-12T14:00:50+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361958",
+      "ticker": "LGEIY",
+      "stance": "bearish",
+      "reasoning": "Smart TVs constantly monitor and log data from nearby network devices.",
+      "text_excerpt": "10 Sunday Reads\nThe weekend is here! Pour yourself a mug ofDanish Blendcoffee, grab a seat outside, and get ready for our longer-form weekend reads:\n•VC isn’t VC anymore — understanding the rise of Cancer Capital: There’s a huge disconnect between what most people think of VC, where an investor ",
+      "source_url": "https://ritholtz.com/2026/09/10-sunday-reads-245/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-13T10:39:08+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361958",
+      "ticker": "AB",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Sunday Reads\nThe weekend is here! Pour yourself a mug ofDanish Blendcoffee, grab a seat outside, and get ready for our longer-form weekend reads:\n•VC isn’t VC anymore — understanding the rise of Cancer Capital: There’s a huge disconnect between what most people think of VC, where an investor ",
+      "source_url": "https://ritholtz.com/2026/09/10-sunday-reads-245/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-13T10:39:08+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361958",
+      "ticker": "EQH",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Sunday Reads\nThe weekend is here! Pour yourself a mug ofDanish Blendcoffee, grab a seat outside, and get ready for our longer-form weekend reads:\n•VC isn’t VC anymore — understanding the rise of Cancer Capital: There’s a huge disconnect between what most people think of VC, where an investor ",
+      "source_url": "https://ritholtz.com/2026/09/10-sunday-reads-245/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-13T10:39:08+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361958",
+      "ticker": "JPM",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Sunday Reads\nThe weekend is here! Pour yourself a mug ofDanish Blendcoffee, grab a seat outside, and get ready for our longer-form weekend reads:\n•VC isn’t VC anymore — understanding the rise of Cancer Capital: There’s a huge disconnect between what most people think of VC, where an investor ",
+      "source_url": "https://ritholtz.com/2026/09/10-sunday-reads-245/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-13T10:39:08+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-09-13T11:41:56.159715+00:00"
+  "last_updated": "2026-09-13T16:09:41.437514+00:00"
 }
