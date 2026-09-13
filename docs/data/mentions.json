@@ -4143,7 +4143,19 @@
       "source_region": "US",
       "mentioned_at": "2026-09-13T10:39:08+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=359948",
+      "ticker": "SCHW",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "T-Bills and Chill? Try Munis & Chill Instead\nI’m not a Shark Tank viewer. But I was intrigued by something Kevin O’Leary, aka Mr. Wonderful, said inthis podcast(via apost by Nick Magiulli).\nO’Leary discusses various aspects of his career, including ideal investments and what many entrepreneurs should strive for in their per",
+      "source_url": "https://ritholtz.com/2026/09/tbill-and-chill/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-10T16:00:39+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-09-13T19:22:14.399008+00:00"
+  "last_updated": "2026-09-13T22:22:05.285030+00:00"
 }
