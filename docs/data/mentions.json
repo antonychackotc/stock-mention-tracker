@@ -4155,7 +4155,67 @@
       "source_region": "US",
       "mentioned_at": "2026-09-10T16:00:39+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=362524",
+      "ticker": "BLK",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "2026 Barron’s Top 100 RIA List\nFor the second time in as many years,RWMmade the Barron’s Top 100 RIA List.\nWhat makes this year’s list especially interesting is both its focus on private equity’s entry into the advisor space — and our decision to avoid that approach.\nFollow our history from theoriginal announc",
+      "source_url": "https://ritholtz.com/2026/09/2026-barrons-100-list/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-14T13:00:15+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361903",
+      "ticker": "AAPL",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Monday AM Reads\nMy back-to-work morning reads:\n•What Years of Inflation Have Done to American Prices: Life has gotten a lot more expensive over the past few years. Across the economy, the cost of goods and services has soared. Consumer prices overall have risen more than 30 percent since the beg",
+      "source_url": "https://ritholtz.com/2026/09/10-monday-am-reads-492/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-14T10:30:44+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361903",
+      "ticker": "AB",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Monday AM Reads\nMy back-to-work morning reads:\n•What Years of Inflation Have Done to American Prices: Life has gotten a lot more expensive over the past few years. Across the economy, the cost of goods and services has soared. Consumer prices overall have risen more than 30 percent since the beg",
+      "source_url": "https://ritholtz.com/2026/09/10-monday-am-reads-492/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-14T10:30:44+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361903",
+      "ticker": "EQH",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Monday AM Reads\nMy back-to-work morning reads:\n•What Years of Inflation Have Done to American Prices: Life has gotten a lot more expensive over the past few years. Across the economy, the cost of goods and services has soared. Consumer prices overall have risen more than 30 percent since the beg",
+      "source_url": "https://ritholtz.com/2026/09/10-monday-am-reads-492/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-14T10:30:44+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361903",
+      "ticker": "JPM",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Monday AM Reads\nMy back-to-work morning reads:\n•What Years of Inflation Have Done to American Prices: Life has gotten a lot more expensive over the past few years. Across the economy, the cost of goods and services has soared. Consumer prices overall have risen more than 30 percent since the beg",
+      "source_url": "https://ritholtz.com/2026/09/10-monday-am-reads-492/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-14T10:30:44+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-09-14T06:07:11.743069+00:00"
+  "last_updated": "2026-09-14T13:55:24.995005+00:00"
 }
