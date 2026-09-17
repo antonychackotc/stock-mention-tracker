@@ -4503,7 +4503,19 @@
       "source_region": "US",
       "mentioned_at": "2026-09-16T18:00:43+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=362443",
+      "ticker": "NVDA",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "How to Get Rich Slowly\nI had a very interesting conversation with Michael Monaghan of Founder’s Fund about HNTI; here is the description:\nBarry Ritholtz explains why getting rich through investing is simpler than most people think, why market forecasts are so often wrong, and why your own behavior may ",
+      "source_url": "https://ritholtz.com/2026/09/how-to-get-rich-slowly/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-17T14:00:38+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-09-17T11:36:29.724689+00:00"
+  "last_updated": "2026-09-17T16:52:50.941406+00:00"
 }
