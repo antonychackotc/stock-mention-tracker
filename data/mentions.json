@@ -4515,7 +4515,19 @@
       "source_region": "US",
       "mentioned_at": "2026-09-17T14:00:38+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361942",
+      "ticker": "BLK",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Friday AM Reads\nMy back in NY morning reads:\n​•Why Are Valuations Falling in a Bull Market?: Ben Carlson runs the year’s tape — mortgages from 6% to 7%, the 10-year from 4% to 5%, inflation from 2.4% to 3.4%, oil from under $60 to over $100. (A Wealth of Common Sense)\n​​•Muni Bonds Are Yielding ",
+      "source_url": "https://ritholtz.com/2026/09/10-friday-am-reads-516/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-18T10:30:14+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-09-18T18:21:08.417770+00:00"
+  "last_updated": "2026-09-18T21:36:36.186102+00:00"
 }
