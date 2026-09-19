@@ -4635,7 +4635,43 @@
       "source_region": "US",
       "mentioned_at": "2026-09-19T10:30:47+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=362766",
+      "ticker": "AAPL",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "MiB: Glen Kacher, CIO of Light Street Capital\n<span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"lazy lazy-hidden mce_SELRES_start\">﻿</span><span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"mce_SEL",
+      "source_url": "https://ritholtz.com/2026/09/mib-glen-kacher/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-19T14:00:27+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=362766",
+      "ticker": "JPM",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "MiB: Glen Kacher, CIO of Light Street Capital\n<span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"lazy lazy-hidden mce_SELRES_start\">﻿</span><span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"mce_SEL",
+      "source_url": "https://ritholtz.com/2026/09/mib-glen-kacher/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-19T14:00:27+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=362766",
+      "ticker": "SPOT",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "MiB: Glen Kacher, CIO of Light Street Capital\n<span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"lazy lazy-hidden mce_SELRES_start\">﻿</span><span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"mce_SEL",
+      "source_url": "https://ritholtz.com/2026/09/mib-glen-kacher/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-19T14:00:27+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-09-19T17:57:20.800049+00:00"
+  "last_updated": "2026-09-19T20:32:42.780593+00:00"
 }
