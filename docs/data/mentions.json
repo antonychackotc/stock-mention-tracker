@@ -4671,7 +4671,31 @@
       "source_region": "US",
       "mentioned_at": "2026-09-19T14:00:27+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361959",
+      "ticker": "SFTBY",
+      "stance": "bearish",
+      "reasoning": "Excessive leverage and AI exposure create serious balance sheet vulnerability.",
+      "text_excerpt": "10 Sunday Reads\nThe weekend is here! Pour yourself a mug ofDanish Blendcoffee, grab a seat outside, and get ready for our longer-form weekend reads:\n•How Three Brothers Built an AI Slop Empire by Buying Legitimate News Sites and Turning Them Into Zombie Content Farms That They Say Get 50 Million",
+      "source_url": "https://ritholtz.com/2026/09/10-sunday-reads-246/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-20T10:30:10+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361959",
+      "ticker": "GOOGL",
+      "stance": "bearish",
+      "reasoning": "Chatbot adoption is eroding the quality and dominance of its search engine.",
+      "text_excerpt": "10 Sunday Reads\nThe weekend is here! Pour yourself a mug ofDanish Blendcoffee, grab a seat outside, and get ready for our longer-form weekend reads:\n•How Three Brothers Built an AI Slop Empire by Buying Legitimate News Sites and Turning Them Into Zombie Content Farms That They Say Get 50 Million",
+      "source_url": "https://ritholtz.com/2026/09/10-sunday-reads-246/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-20T10:30:10+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-09-20T06:06:13.423894+00:00"
+  "last_updated": "2026-09-20T12:15:29.677993+00:00"
 }
