@@ -4695,7 +4695,43 @@
       "source_region": "US",
       "mentioned_at": "2026-09-20T10:30:10+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=360060",
+      "ticker": "AAPL",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "From “Liar’s Poker” to Today: An Evening with Michael Lewis\n<span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"lazy lazy-hidden mce_SELRES_start\">﻿</span><span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"lazy la",
+      "source_url": "https://ritholtz.com/2026/09/evening-with-michael-lewis/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-21T16:00:18+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=360060",
+      "ticker": "GOOGL",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "From “Liar’s Poker” to Today: An Evening with Michael Lewis\n<span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"lazy lazy-hidden mce_SELRES_start\">﻿</span><span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"lazy la",
+      "source_url": "https://ritholtz.com/2026/09/evening-with-michael-lewis/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-21T16:00:18+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=360060",
+      "ticker": "SPOT",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "From “Liar’s Poker” to Today: An Evening with Michael Lewis\n<span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"lazy lazy-hidden mce_SELRES_start\">﻿</span><span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"lazy la",
+      "source_url": "https://ritholtz.com/2026/09/evening-with-michael-lewis/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-21T16:00:18+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-09-21T19:21:07.270777+00:00"
+  "last_updated": "2026-09-21T23:13:18.540015+00:00"
 }
