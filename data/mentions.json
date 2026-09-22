@@ -4731,7 +4731,19 @@
       "source_region": "US",
       "mentioned_at": "2026-09-21T16:00:18+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361904",
+      "ticker": "APO",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Monday AM Reads\nMy Yom Kippur morning reads:\n​•Weeks Before the Midterms, Almost Everything Is Getting More Expensive: David Uberti and Justin Lahart on mortgage rates near 7%, gas at its highest since 2022, and the Fed’s first hike in three years. The price of eating out and buying a house keep",
+      "source_url": "https://ritholtz.com/2026/09/10-monday-am-reads-493/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-21T10:30:45+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-09-22T04:44:27.020433+00:00"
+  "last_updated": "2026-09-22T09:53:04.210144+00:00"
 }
