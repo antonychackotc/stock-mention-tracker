@@ -4815,7 +4815,67 @@
       "source_region": "US",
       "mentioned_at": "2026-09-22T13:00:36+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=362935",
+      "ticker": "KO",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "How Non-Competes Damage the Labor Market\nLast month, I posted this data dive into the question of “How Wealth Is Created in America.” It’s always fun to look at the sources of wealth, and I used a few broad data sources.1\nBut these create a very blunt, 10,000-foot view of wealth in America. It would be great if there wa",
+      "source_url": "https://ritholtz.com/2026/09/noncompetes-damage-labor/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-24T16:00:17+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361922",
+      "ticker": "AMZN",
+      "stance": "bearish",
+      "reasoning": "Drone delivery operations are causing severe noise disturbances in suburban neighborhoods",
+      "text_excerpt": "10 Wednesday AM Reads\nMy Autumn Equinox morning reads:\n•‘Crisis even bigger than Covid’: American business owners are barely getting by.  Around the country, American business owners across myriad industries say they’re in a similar boat. A closely watched monthly survey from the Institute for Supply ",
+      "source_url": "https://ritholtz.com/2026/09/10-wednesday-am-reads-391/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-23T10:30:56+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361922",
+      "ticker": "PARA",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Wednesday AM Reads\nMy Autumn Equinox morning reads:\n•‘Crisis even bigger than Covid’: American business owners are barely getting by.  Around the country, American business owners across myriad industries say they’re in a similar boat. A closely watched monthly survey from the Institute for Supply ",
+      "source_url": "https://ritholtz.com/2026/09/10-wednesday-am-reads-391/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-23T10:30:56+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361922",
+      "ticker": "WBD",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Wednesday AM Reads\nMy Autumn Equinox morning reads:\n•‘Crisis even bigger than Covid’: American business owners are barely getting by.  Around the country, American business owners across myriad industries say they’re in a similar boat. A closely watched monthly survey from the Institute for Supply ",
+      "source_url": "https://ritholtz.com/2026/09/10-wednesday-am-reads-391/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-23T10:30:56+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361922",
+      "ticker": "APO",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Wednesday AM Reads\nMy Autumn Equinox morning reads:\n•‘Crisis even bigger than Covid’: American business owners are barely getting by.  Around the country, American business owners across myriad industries say they’re in a similar boat. A closely watched monthly survey from the Institute for Supply ",
+      "source_url": "https://ritholtz.com/2026/09/10-wednesday-am-reads-391/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-23T10:30:56+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-09-25T01:24:42.550927+00:00"
+  "last_updated": "2026-09-25T07:41:02.488666+00:00"
 }
