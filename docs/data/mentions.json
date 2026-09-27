@@ -5079,7 +5079,67 @@
       "source_region": "US",
       "mentioned_at": "2026-09-23T22:00:11+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361960",
+      "ticker": "DKNG",
+      "stance": "bearish",
+      "reasoning": "Criticized for using AI to target vulnerable gamblers while ignoring addiction risks.",
+      "text_excerpt": "10 Sunday Reads\nThe weekend is here! Pour yourself a mug ofDanish Blendcoffee, grab a seat outside, and get ready for our longer-form weekend reads:\n​•How DraftKings Uses A.I. to Target the Gamblers Likeliest to Lose: Jenny Vrentas on the machine-learning model DraftKings built from customer bet",
+      "source_url": "https://ritholtz.com/2026/09/10-sunday-reads-247/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-27T10:30:11+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361960",
+      "ticker": "ORCL",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Sunday Reads\nThe weekend is here! Pour yourself a mug ofDanish Blendcoffee, grab a seat outside, and get ready for our longer-form weekend reads:\n​•How DraftKings Uses A.I. to Target the Gamblers Likeliest to Lose: Jenny Vrentas on the machine-learning model DraftKings built from customer bet",
+      "source_url": "https://ritholtz.com/2026/09/10-sunday-reads-247/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-27T10:30:11+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361960",
+      "ticker": "PARA",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Sunday Reads\nThe weekend is here! Pour yourself a mug ofDanish Blendcoffee, grab a seat outside, and get ready for our longer-form weekend reads:\n​•How DraftKings Uses A.I. to Target the Gamblers Likeliest to Lose: Jenny Vrentas on the machine-learning model DraftKings built from customer bet",
+      "source_url": "https://ritholtz.com/2026/09/10-sunday-reads-247/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-27T10:30:11+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361960",
+      "ticker": "WBD",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Sunday Reads\nThe weekend is here! Pour yourself a mug ofDanish Blendcoffee, grab a seat outside, and get ready for our longer-form weekend reads:\n​•How DraftKings Uses A.I. to Target the Gamblers Likeliest to Lose: Jenny Vrentas on the machine-learning model DraftKings built from customer bet",
+      "source_url": "https://ritholtz.com/2026/09/10-sunday-reads-247/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-27T10:30:11+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361960",
+      "ticker": "JPM",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Sunday Reads\nThe weekend is here! Pour yourself a mug ofDanish Blendcoffee, grab a seat outside, and get ready for our longer-form weekend reads:\n​•How DraftKings Uses A.I. to Target the Gamblers Likeliest to Lose: Jenny Vrentas on the machine-learning model DraftKings built from customer bet",
+      "source_url": "https://ritholtz.com/2026/09/10-sunday-reads-247/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-27T10:30:11+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-09-27T13:53:05.995442+00:00"
+  "last_updated": "2026-09-27T18:17:51.571984+00:00"
 }
