@@ -5271,7 +5271,31 @@
       "source_region": "US",
       "mentioned_at": "2026-09-29T10:00:45+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363190",
+      "ticker": "AAPL",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "At the Money: The Data Behind America’s Wealthy\n<span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"lazy lazy-hidden mce_SELRES_start\">﻿</span><span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"mce_SEL",
+      "source_url": "https://ritholtz.com/2026/09/atm-data-behind-americas-wealthy/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-30T16:00:09+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363190",
+      "ticker": "SPOT",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "At the Money: The Data Behind America’s Wealthy\n<span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"lazy lazy-hidden mce_SELRES_start\">﻿</span><span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"mce_SEL",
+      "source_url": "https://ritholtz.com/2026/09/atm-data-behind-americas-wealthy/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-30T16:00:09+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-09-30T19:08:51.540479+00:00"
+  "last_updated": "2026-09-30T23:41:57.156550+00:00"
 }
