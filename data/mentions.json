@@ -5343,7 +5343,55 @@
       "source_region": "US",
       "mentioned_at": "2026-10-01T10:30:02+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361927",
+      "ticker": "V",
+      "stance": "bearish",
+      "reasoning": "Criticized for operating an expensive monopoly and receiving overly lenient regulatory settlements.",
+      "text_excerpt": "10 Wednesday AM Reads\nMy mid-week morning reads:\n•Anthropic’s IPO prospectus shows sweeping AI vision, surging costs. Anthropic is making a massive bet that AI will transform the global economy more profoundly than ​industrialization, electricity and the internet, according to its IPO prospectus seen ",
+      "source_url": "https://ritholtz.com/2026/09/10-wednesday-am-reads-389/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-30T10:30:07+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361927",
+      "ticker": "MA",
+      "stance": "bearish",
+      "reasoning": "Criticized alongside Visa for duopoly practices that artificially increase consumer costs.",
+      "text_excerpt": "10 Wednesday AM Reads\nMy mid-week morning reads:\n•Anthropic’s IPO prospectus shows sweeping AI vision, surging costs. Anthropic is making a massive bet that AI will transform the global economy more profoundly than ​industrialization, electricity and the internet, according to its IPO prospectus seen ",
+      "source_url": "https://ritholtz.com/2026/09/10-wednesday-am-reads-389/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-30T10:30:07+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361927",
+      "ticker": "GOOGL",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Wednesday AM Reads\nMy mid-week morning reads:\n•Anthropic’s IPO prospectus shows sweeping AI vision, surging costs. Anthropic is making a massive bet that AI will transform the global economy more profoundly than ​industrialization, electricity and the internet, according to its IPO prospectus seen ",
+      "source_url": "https://ritholtz.com/2026/09/10-wednesday-am-reads-389/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-30T10:30:07+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361927",
+      "ticker": "JPM",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Wednesday AM Reads\nMy mid-week morning reads:\n•Anthropic’s IPO prospectus shows sweeping AI vision, surging costs. Anthropic is making a massive bet that AI will transform the global economy more profoundly than ​industrialization, electricity and the internet, according to its IPO prospectus seen ",
+      "source_url": "https://ritholtz.com/2026/09/10-wednesday-am-reads-389/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-09-30T10:30:07+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-10-01T18:49:48.083088+00:00"
+  "last_updated": "2026-10-01T23:06:08.216156+00:00"
 }
