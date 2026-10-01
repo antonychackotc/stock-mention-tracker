@@ -5295,7 +5295,55 @@
       "source_region": "US",
       "mentioned_at": "2026-09-30T16:00:09+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363125",
+      "ticker": "WMT",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Thursday AM Reads\nWelcome to October! Kick off the month right with my morning reads:\n•A double-edged code – How AI is reshaping the global wealth landscape: Global financial assets expanded to a record $260 trillion in 2025, expanding +8.6% from the previous year, despite a challenging geopolitic",
+      "source_url": "https://ritholtz.com/2026/10/10-thursday-am-reads-513/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-01T10:30:02+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363125",
+      "ticker": "MSFT",
+      "stance": "bearish",
+      "reasoning": "Summarizes internal concerns that AI scraping damages the news ecosystem.",
+      "text_excerpt": "10 Thursday AM Reads\nWelcome to October! Kick off the month right with my morning reads:\n•A double-edged code – How AI is reshaping the global wealth landscape: Global financial assets expanded to a record $260 trillion in 2025, expanding +8.6% from the previous year, despite a challenging geopolitic",
+      "source_url": "https://ritholtz.com/2026/10/10-thursday-am-reads-513/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-01T10:30:02+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363125",
+      "ticker": "NKE",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Thursday AM Reads\nWelcome to October! Kick off the month right with my morning reads:\n•A double-edged code – How AI is reshaping the global wealth landscape: Global financial assets expanded to a record $260 trillion in 2025, expanding +8.6% from the previous year, despite a challenging geopolitic",
+      "source_url": "https://ritholtz.com/2026/10/10-thursday-am-reads-513/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-01T10:30:02+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363125",
+      "ticker": "SCHW",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Thursday AM Reads\nWelcome to October! Kick off the month right with my morning reads:\n•A double-edged code – How AI is reshaping the global wealth landscape: Global financial assets expanded to a record $260 trillion in 2025, expanding +8.6% from the previous year, despite a challenging geopolitic",
+      "source_url": "https://ritholtz.com/2026/10/10-thursday-am-reads-513/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-01T10:30:02+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-10-01T05:41:05.925966+00:00"
+  "last_updated": "2026-10-01T13:02:55.557559+00:00"
 }
