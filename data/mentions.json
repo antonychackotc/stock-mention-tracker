@@ -5391,7 +5391,43 @@
       "source_region": "US",
       "mentioned_at": "2026-09-30T10:30:07+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363223",
+      "ticker": "META",
+      "stance": "bearish",
+      "reasoning": "Its automated internet task app performed poorly in testing.",
+      "text_excerpt": "10 Friday AM Reads\nMy end-of-week morning reads:\n•Has AI impacted the labor market yet? Evaluating the state of the evidence: Alex Imas and Jacob Schaal review the impact of AI on the labor market with a focus on early-career workers. The more important lagging indicators, unemployment and layoffs,",
+      "source_url": "https://ritholtz.com/2026/10/10-friday-am-reads-518/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-02T10:30:08+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363223",
+      "ticker": "DIS",
+      "stance": "bullish",
+      "reasoning": "Underground utility system effectively solves major infrastructure challenges.",
+      "text_excerpt": "10 Friday AM Reads\nMy end-of-week morning reads:\n•Has AI impacted the labor market yet? Evaluating the state of the evidence: Alex Imas and Jacob Schaal review the impact of AI on the labor market with a focus on early-career workers. The more important lagging indicators, unemployment and layoffs,",
+      "source_url": "https://ritholtz.com/2026/10/10-friday-am-reads-518/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-02T10:30:08+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363223",
+      "ticker": "SCHW",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Friday AM Reads\nMy end-of-week morning reads:\n•Has AI impacted the labor market yet? Evaluating the state of the evidence: Alex Imas and Jacob Schaal review the impact of AI on the labor market with a focus on early-career workers. The more important lagging indicators, unemployment and layoffs,",
+      "source_url": "https://ritholtz.com/2026/10/10-friday-am-reads-518/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-02T10:30:08+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-10-02T18:22:35.598711+00:00"
+  "last_updated": "2026-10-02T22:56:51.133562+00:00"
 }
