@@ -5427,7 +5427,31 @@
       "source_region": "US",
       "mentioned_at": "2026-10-02T10:30:08+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363014",
+      "ticker": "JPM",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Weekend Reads\nThe weekend is here! Pour yourself a mug ofDanish Blendcoffee, grab a seat outside, and get ready for our longer-form weekend reads:\n•I Went Shopping. When Did I Become an Unpaid Employee?This North American tipping culture really annoys me. How businesses fired the staff, handed",
+      "source_url": "https://ritholtz.com/2026/10/10-weekend-reads-110/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-03T10:30:09+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363014",
+      "ticker": "SCHW",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Weekend Reads\nThe weekend is here! Pour yourself a mug ofDanish Blendcoffee, grab a seat outside, and get ready for our longer-form weekend reads:\n•I Went Shopping. When Did I Become an Unpaid Employee?This North American tipping culture really annoys me. How businesses fired the staff, handed",
+      "source_url": "https://ritholtz.com/2026/10/10-weekend-reads-110/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-03T10:30:09+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-10-03T08:00:11.868903+00:00"
+  "last_updated": "2026-10-03T13:18:24.153077+00:00"
 }
