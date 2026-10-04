@@ -5499,7 +5499,31 @@
       "source_region": "US",
       "mentioned_at": "2026-10-03T17:00:28+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363279",
+      "ticker": "DKNG",
+      "stance": "bearish",
+      "reasoning": "Promoted predatory VIP programs to a user displaying obvious problem gambling behavior.",
+      "text_excerpt": "10 Sunday Reads\nAvert your eyes! MySunday morninglook at incompetency, corruption and policy failures:\n•I Deliberately Bet Like a Problem Gambler.DraftKings Made Me a VIP. Jake Pearson blew $1,800 in one night chasing losses with bigger bets, a textbook warning sign. The next day DraftKings invi",
+      "source_url": "https://ritholtz.com/2026/10/10-sunday-reads-248/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-04T10:30:48+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363279",
+      "ticker": "SCHW",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Sunday Reads\nAvert your eyes! MySunday morninglook at incompetency, corruption and policy failures:\n•I Deliberately Bet Like a Problem Gambler.DraftKings Made Me a VIP. Jake Pearson blew $1,800 in one night chasing losses with bigger bets, a textbook warning sign. The next day DraftKings invi",
+      "source_url": "https://ritholtz.com/2026/10/10-sunday-reads-248/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-04T10:30:48+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-10-04T06:45:58.640776+00:00"
+  "last_updated": "2026-10-04T13:09:18.436945+00:00"
 }
