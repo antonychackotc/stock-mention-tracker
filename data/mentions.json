@@ -5523,7 +5523,31 @@
       "source_region": "US",
       "mentioned_at": "2026-10-04T10:30:48+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363408",
+      "ticker": "NFLX",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "The Knowledge Project Podcast: Bill Ackman\nShane Parrish’s Knowledge Project:\nBill Ackman is the founder and CEO of Pershing Square Capital Management, one of the most closely watched investment firms in the world. In this conversation, he breaks down how he tells the difference between real innovation from hype, what he ",
+      "source_url": "https://ritholtz.com/2026/10/knowledge-proj-bill-ackman/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-04T17:00:13+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363408",
+      "ticker": "BRK.A",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "The Knowledge Project Podcast: Bill Ackman\nShane Parrish’s Knowledge Project:\nBill Ackman is the founder and CEO of Pershing Square Capital Management, one of the most closely watched investment firms in the world. In this conversation, he breaks down how he tells the difference between real innovation from hype, what he ",
+      "source_url": "https://ritholtz.com/2026/10/knowledge-proj-bill-ackman/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-04T17:00:13+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-10-04T13:09:18.436945+00:00"
+  "last_updated": "2026-10-04T18:06:20.465213+00:00"
 }
