@@ -5619,7 +5619,55 @@
       "source_region": "US",
       "mentioned_at": "2026-10-05T16:00:23+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363268",
+      "ticker": "META",
+      "stance": "bearish",
+      "reasoning": "New AI software threatens to disrupt and degrade the user web experience.",
+      "text_excerpt": "10 Monday AM Reads\nMy back-to-work morning reads:\n•Private Equity Has a Problem. Uncle Sam Says Your Wallet Can Fix It.: A government proposal would help fund managers sell alternative investments to a much wider audience. Wall Street’s problem becomes Main Street’s opportunity, or vice versa. (Wal",
+      "source_url": "https://ritholtz.com/2026/10/10-monday-am-reads-495/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-05T10:30:18+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363268",
+      "ticker": "DIS",
+      "stance": "bullish",
+      "reasoning": "Innovative infrastructure design successfully addresses costly underground utility challenges.",
+      "text_excerpt": "10 Monday AM Reads\nMy back-to-work morning reads:\n•Private Equity Has a Problem. Uncle Sam Says Your Wallet Can Fix It.: A government proposal would help fund managers sell alternative investments to a much wider audience. Wall Street’s problem becomes Main Street’s opportunity, or vice versa. (Wal",
+      "source_url": "https://ritholtz.com/2026/10/10-monday-am-reads-495/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-05T10:30:18+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363268",
+      "ticker": "SCHW",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Monday AM Reads\nMy back-to-work morning reads:\n•Private Equity Has a Problem. Uncle Sam Says Your Wallet Can Fix It.: A government proposal would help fund managers sell alternative investments to a much wider audience. Wall Street’s problem becomes Main Street’s opportunity, or vice versa. (Wal",
+      "source_url": "https://ritholtz.com/2026/10/10-monday-am-reads-495/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-05T10:30:18+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363268",
+      "ticker": "DB",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Monday AM Reads\nMy back-to-work morning reads:\n•Private Equity Has a Problem. Uncle Sam Says Your Wallet Can Fix It.: A government proposal would help fund managers sell alternative investments to a much wider audience. Wall Street’s problem becomes Main Street’s opportunity, or vice versa. (Wal",
+      "source_url": "https://ritholtz.com/2026/10/10-monday-am-reads-495/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-05T10:30:18+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-10-06T20:12:29.404627+00:00"
+  "last_updated": "2026-10-07T00:37:36.289158+00:00"
 }
