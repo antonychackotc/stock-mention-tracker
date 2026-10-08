@@ -5823,7 +5823,115 @@
       "source_region": "Africa",
       "mentioned_at": "2024-07-28T06:07:11+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363228",
+      "ticker": "TSLA",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Thursday AM Reads\nMy morning reads:\n•Investors look to shelter portfolios from rising AI concentration risks: Fund managers see hedge funds and emerging markets assets as bulwarks against sudden shift in sentiment on artificial intelligence  (Financial Times)\n•Exponential Wealth: Centuries of Stoc",
+      "source_url": "https://ritholtz.com/2026/10/10-thursday-am-reads-516/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-08T10:30:12+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363228",
+      "ticker": "LULU",
+      "stance": "bearish",
+      "reasoning": "Consumers are no longer purchasing the brand's products.",
+      "text_excerpt": "10 Thursday AM Reads\nMy morning reads:\n•Investors look to shelter portfolios from rising AI concentration risks: Fund managers see hedge funds and emerging markets assets as bulwarks against sudden shift in sentiment on artificial intelligence  (Financial Times)\n•Exponential Wealth: Centuries of Stoc",
+      "source_url": "https://ritholtz.com/2026/10/10-thursday-am-reads-516/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-08T10:30:12+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363232",
+      "ticker": "UBER",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Wednesday AM Reads\nMy mid-week morning reads:\n•The Diesel Weapon: Why a rather unglamorous fuel is suddenly at the centre of a transatlantic power struggle, and why this matters for all of us (Material World)\n•250K per year is plenty of income: If you don’t feel rich here, you probably never will: ",
+      "source_url": "https://ritholtz.com/2026/10/10-wednesday-am-reads-392/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-07T10:30:18+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363232",
+      "ticker": "GS",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Wednesday AM Reads\nMy mid-week morning reads:\n•The Diesel Weapon: Why a rather unglamorous fuel is suddenly at the centre of a transatlantic power struggle, and why this matters for all of us (Material World)\n•250K per year is plenty of income: If you don’t feel rich here, you probably never will: ",
+      "source_url": "https://ritholtz.com/2026/10/10-wednesday-am-reads-392/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-07T10:30:18+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363232",
+      "ticker": "NFLX",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Wednesday AM Reads\nMy mid-week morning reads:\n•The Diesel Weapon: Why a rather unglamorous fuel is suddenly at the centre of a transatlantic power struggle, and why this matters for all of us (Material World)\n•250K per year is plenty of income: If you don’t feel rich here, you probably never will: ",
+      "source_url": "https://ritholtz.com/2026/10/10-wednesday-am-reads-392/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-07T10:30:18+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363232",
+      "ticker": "SCHW",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Wednesday AM Reads\nMy mid-week morning reads:\n•The Diesel Weapon: Why a rather unglamorous fuel is suddenly at the centre of a transatlantic power struggle, and why this matters for all of us (Material World)\n•250K per year is plenty of income: If you don’t feel rich here, you probably never will: ",
+      "source_url": "https://ritholtz.com/2026/10/10-wednesday-am-reads-392/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-07T10:30:18+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363236",
+      "ticker": "JPM",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Tuesday AM Reads\nMy Two-for-Tuesday morning reads:\n•The Mighty American Consumer Is Crashing Through Inflation and Driving Growth: Spending is rising because prices are climbing and Americans are buying more stuff, despite long-running frustrations over inflation. (Wall Street Journal)\n•New Innov",
+      "source_url": "https://ritholtz.com/2026/10/10-tuesday-am-reads-493/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-06T10:00:22+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363236",
+      "ticker": "002415.SZ",
+      "stance": "bearish",
+      "reasoning": "Exposed for utilizing facial recognition tech to track ethnic minorities in Xinjiang",
+      "text_excerpt": "10 Tuesday AM Reads\nMy Two-for-Tuesday morning reads:\n•The Mighty American Consumer Is Crashing Through Inflation and Driving Growth: Spending is rising because prices are climbing and Americans are buying more stuff, despite long-running frustrations over inflation. (Wall Street Journal)\n•New Innov",
+      "source_url": "https://ritholtz.com/2026/10/10-tuesday-am-reads-493/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-06T10:00:22+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363236",
+      "ticker": "SCHW",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Tuesday AM Reads\nMy Two-for-Tuesday morning reads:\n•The Mighty American Consumer Is Crashing Through Inflation and Driving Growth: Spending is rising because prices are climbing and Americans are buying more stuff, despite long-running frustrations over inflation. (Wall Street Journal)\n•New Innov",
+      "source_url": "https://ritholtz.com/2026/10/10-tuesday-am-reads-493/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-06T10:00:22+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-10-08T08:51:08.201751+00:00"
+  "last_updated": "2026-10-08T16:24:12.072983+00:00"
 }
