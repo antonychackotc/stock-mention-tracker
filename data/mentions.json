@@ -5967,7 +5967,43 @@
       "source_region": "US",
       "mentioned_at": "2026-10-07T20:00:11+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363224",
+      "ticker": "TSLA",
+      "stance": "bullish",
+      "reasoning": "Upcoming product line could significantly impact the entire auto market.",
+      "text_excerpt": "10 Friday AM Reads\nMy end-of-week morning reads:\n•Inside Bessent’s Treasury: Tension, Turnover and Unmet Economic Goals: Ahead of midterms that could turn on high prices and borrowing costs, secretary dresses down officials (Wall Street Journal)\n•AI Agents Are About to Flood the Workforce. No One’s",
+      "source_url": "https://ritholtz.com/2026/10/10-friday-am-reads-521/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-09T10:30:09+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363224",
+      "ticker": "AXP",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Friday AM Reads\nMy end-of-week morning reads:\n•Inside Bessent’s Treasury: Tension, Turnover and Unmet Economic Goals: Ahead of midterms that could turn on high prices and borrowing costs, secretary dresses down officials (Wall Street Journal)\n•AI Agents Are About to Flood the Workforce. No One’s",
+      "source_url": "https://ritholtz.com/2026/10/10-friday-am-reads-521/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-09T10:30:09+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363224",
+      "ticker": "DB",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Friday AM Reads\nMy end-of-week morning reads:\n•Inside Bessent’s Treasury: Tension, Turnover and Unmet Economic Goals: Ahead of midterms that could turn on high prices and borrowing costs, secretary dresses down officials (Wall Street Journal)\n•AI Agents Are About to Flood the Workforce. No One’s",
+      "source_url": "https://ritholtz.com/2026/10/10-friday-am-reads-521/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-09T10:30:09+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-10-09T08:55:27.623983+00:00"
+  "last_updated": "2026-10-09T16:06:46.317459+00:00"
 }
