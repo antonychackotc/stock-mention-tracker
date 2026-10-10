@@ -6003,7 +6003,19 @@
       "source_region": "US",
       "mentioned_at": "2026-10-09T10:30:09+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=361949",
+      "ticker": "DKNG",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Weekend Reads\nThe weekend is here! Pour yourself a mug ofDanish Blendcoffee, grab a seat outside, and get ready for our longer-form weekend reads:\n•How Everything Became Gambling: It’s not just DraftKings and Polymarket — the logic of gambling undergirds everything coming out of Silicon Valley",
+      "source_url": "https://ritholtz.com/2026/10/10-weekend-reads-111/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-10T10:30:14+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-10-10T08:24:22.408496+00:00"
+  "last_updated": "2026-10-10T15:16:01.736028+00:00"
 }
