@@ -6015,7 +6015,43 @@
       "source_region": "US",
       "mentioned_at": "2026-10-10T10:30:14+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363636",
+      "ticker": "AAPL",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "MiB: Maria Vassalou, Head of the Pictet Research Institute\n<span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"lazy lazy-hidden mce_SELRES_start\">﻿</span><span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"mce_SEL",
+      "source_url": "https://ritholtz.com/2026/10/mib-maria-vassalou-2/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-10T14:00:34+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363636",
+      "ticker": "SPOT",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "MiB: Maria Vassalou, Head of the Pictet Research Institute\n<span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"lazy lazy-hidden mce_SELRES_start\">﻿</span><span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"mce_SEL",
+      "source_url": "https://ritholtz.com/2026/10/mib-maria-vassalou-2/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-10T14:00:34+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363636",
+      "ticker": "JPM",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "MiB: Maria Vassalou, Head of the Pictet Research Institute\n<span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"lazy lazy-hidden mce_SELRES_start\">﻿</span><span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"mce_SEL",
+      "source_url": "https://ritholtz.com/2026/10/mib-maria-vassalou-2/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-10T14:00:34+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-10-10T15:16:01.736028+00:00"
+  "last_updated": "2026-10-10T20:00:29.306741+00:00"
 }
