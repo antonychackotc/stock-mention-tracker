@@ -6051,7 +6051,31 @@
       "source_region": "US",
       "mentioned_at": "2026-10-10T14:00:34+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363273",
+      "ticker": "BRK.A",
+      "stance": "bullish",
+      "reasoning": "Praises Warren Buffett's exceptional investment mindset and rare analytical talent.",
+      "text_excerpt": "10 Monday AM Reads\nMy Columbus Day morning reads:\n​•The Time Scott Bessent Tried to Outsmart the Bond Market: Matt Egan: Bessent arrived at Treasury with market credibility, Wall Street’s respect and the swagger that helped Soros break the Bank of England in 1992. The bond market had other ideas. (",
+      "source_url": "https://ritholtz.com/2026/10/10-monday-am-reads-496/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-12T10:30:40+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363273",
+      "ticker": "YNDX",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Monday AM Reads\nMy Columbus Day morning reads:\n​•The Time Scott Bessent Tried to Outsmart the Bond Market: Matt Egan: Bessent arrived at Treasury with market credibility, Wall Street’s respect and the swagger that helped Soros break the Bank of England in 1992. The bond market had other ideas. (",
+      "source_url": "https://ritholtz.com/2026/10/10-monday-am-reads-496/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-12T10:30:40+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-10-12T18:57:52.153836+00:00"
+  "last_updated": "2026-10-13T01:16:05.377119+00:00"
 }
