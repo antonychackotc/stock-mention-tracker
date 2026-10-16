@@ -6171,7 +6171,43 @@
       "source_region": "US",
       "mentioned_at": "2026-10-16T10:30:10+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363908",
+      "ticker": "BP",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "Top? Beware Your Confirmation Bias\n“Are we in the 6th, 8th, or 9thinning? I don’t know, but I suspect the beginning of this bull is further away than the end.”  –Me, 5 days ago\nI always hate the after-the-fact explanations of why the market is doing anything on any given day — but it’s hard to ignoreCrude Oil over",
+      "source_url": "https://ritholtz.com/2026/10/top-beware-your-confirmation-bias/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-16T20:00:17+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363127",
+      "ticker": "WBD",
+      "stance": "bearish",
+      "reasoning": "Skeptical of exaggerated corporate hype and jargon surrounding the acquisition deal",
+      "text_excerpt": "10 Thursday AM Reads\nMy morning reads:\n•The Nobel Prize Message for Kevin Warsh: “Clear and credible communication about how [central banks] reason and what they plan to do has become vital to their operations,” the Nobel committee said. (Wall Street Journal)\n•Broad Pickup in Prices Lifted Inflation ",
+      "source_url": "https://ritholtz.com/2026/10/10-thursday-am-reads-515/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-15T10:30:22+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363127",
+      "ticker": "JPM",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Thursday AM Reads\nMy morning reads:\n•The Nobel Prize Message for Kevin Warsh: “Clear and credible communication about how [central banks] reason and what they plan to do has become vital to their operations,” the Nobel committee said. (Wall Street Journal)\n•Broad Pickup in Prices Lifted Inflation ",
+      "source_url": "https://ritholtz.com/2026/10/10-thursday-am-reads-515/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-15T10:30:22+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-10-16T21:00:21.233436+00:00"
+  "last_updated": "2026-10-16T23:29:19.995254+00:00"
 }
