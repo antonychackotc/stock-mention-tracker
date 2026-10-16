@@ -6075,7 +6075,67 @@
       "source_region": "US",
       "mentioned_at": "2026-10-12T10:30:40+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363791",
+      "ticker": "BSC",
+      "stance": "bearish",
+      "reasoning": "Hedge funds crashed due to excessive leverage on declining subprime assets.",
+      "text_excerpt": "No, Rising Bond Yields Did Not Trigger the GFC\nThe first few times I saw mention of the GFC being caused by rising bond yields, I let it go. I assumed it was hyperbole or an inartfully phrased line.\nBut this week, I read the following sentence:\n“That, after all, is what happened when the 10-year crashed through 5% to trigger ",
+      "source_url": "https://ritholtz.com/2026/10/rising-bond-yields-gfc/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-15T16:30:08+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363791",
+      "ticker": "HSBC",
+      "stance": "bearish",
+      "reasoning": "Recognized early subprime losses well before bond yields peaked.",
+      "text_excerpt": "No, Rising Bond Yields Did Not Trigger the GFC\nThe first few times I saw mention of the GFC being caused by rising bond yields, I let it go. I assumed it was hyperbole or an inartfully phrased line.\nBut this week, I read the following sentence:\n“That, after all, is what happened when the 10-year crashed through 5% to trigger ",
+      "source_url": "https://ritholtz.com/2026/10/rising-bond-yields-gfc/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-15T16:30:08+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363791",
+      "ticker": "NEW",
+      "stance": "bearish",
+      "reasoning": "Collapsed into bankruptcy as subprime mortgage defaults spread.",
+      "text_excerpt": "No, Rising Bond Yields Did Not Trigger the GFC\nThe first few times I saw mention of the GFC being caused by rising bond yields, I let it go. I assumed it was hyperbole or an inartfully phrased line.\nBut this week, I read the following sentence:\n“That, after all, is what happened when the 10-year crashed through 5% to trigger ",
+      "source_url": "https://ritholtz.com/2026/10/rising-bond-yields-gfc/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-15T16:30:08+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363233",
+      "ticker": "AMZN",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Wednesday AM Reads\nMy mid-week morning reads:\n•The 12th-century military disaster that forever changed global finance: After a plague-ridden crusade left Venice drowning in debt, the republic created the world’s first bond market, changing the relationship between the government and its citizens. (",
+      "source_url": "https://ritholtz.com/2026/10/10-wednesday-am-reads-394/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-14T10:30:19+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363233",
+      "ticker": "YNDX",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Wednesday AM Reads\nMy mid-week morning reads:\n•The 12th-century military disaster that forever changed global finance: After a plague-ridden crusade left Venice drowning in debt, the republic created the world’s first bond market, changing the relationship between the government and its citizens. (",
+      "source_url": "https://ritholtz.com/2026/10/10-wednesday-am-reads-394/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-14T10:30:19+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-10-16T07:03:14.342705+00:00"
+  "last_updated": "2026-10-16T12:20:39.155495+00:00"
 }
