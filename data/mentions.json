@@ -6135,7 +6135,43 @@
       "source_region": "US",
       "mentioned_at": "2026-10-14T10:30:19+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363225",
+      "ticker": "COMP",
+      "stance": "bearish",
+      "reasoning": "Facing criticism for hiding property listings and reducing real estate market transparency.",
+      "text_excerpt": "10 Friday AM Reads\nMy end-of-week morning reads:\n•Power Bill Divide: Soaring prices at some of America’s Biggest Utilities are fueling new scrutiny of the investor-owned model.  (Bloomberg)\n•What the Midterms Mean for Your Stock Portfolio: Midterm elections can move headlines. History says they sho",
+      "source_url": "https://ritholtz.com/2026/10/10-friday-am-reads-519/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-16T10:30:10+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363225",
+      "ticker": "GM",
+      "stance": "bullish",
+      "reasoning": "Chief executive maintains an optimistic outlook on the growth of electric vehicles.",
+      "text_excerpt": "10 Friday AM Reads\nMy end-of-week morning reads:\n•Power Bill Divide: Soaring prices at some of America’s Biggest Utilities are fueling new scrutiny of the investor-owned model.  (Bloomberg)\n•What the Midterms Mean for Your Stock Portfolio: Midterm elections can move headlines. History says they sho",
+      "source_url": "https://ritholtz.com/2026/10/10-friday-am-reads-519/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-16T10:30:10+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363225",
+      "ticker": "JPM",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Friday AM Reads\nMy end-of-week morning reads:\n•Power Bill Divide: Soaring prices at some of America’s Biggest Utilities are fueling new scrutiny of the investor-owned model.  (Bloomberg)\n•What the Midterms Mean for Your Stock Portfolio: Midterm elections can move headlines. History says they sho",
+      "source_url": "https://ritholtz.com/2026/10/10-friday-am-reads-519/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-16T10:30:10+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-10-16T17:20:23.197075+00:00"
+  "last_updated": "2026-10-16T21:00:21.233436+00:00"
 }
