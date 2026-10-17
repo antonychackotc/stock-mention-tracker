@@ -6423,7 +6423,19 @@
       "source_region": "US",
       "mentioned_at": "2026-10-13T12:30:50+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363261",
+      "ticker": "JPM",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Weekend Reads\nThe weekend is here! Pour yourself a mug ofDanish Blendcoffee, grab a seat outside, and get ready for our longer-form weekend reads:\n​•America Didn’t Lose Its Rare Earth Industry. It Sold It.: Markets price for cost. China prices for control. The risk of a rare earths cutoff is a",
+      "source_url": "https://ritholtz.com/2026/10/10-weekend-reads-112/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-17T10:30:47+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-10-17T13:38:54.589957+00:00"
+  "last_updated": "2026-10-17T17:02:29.194684+00:00"
 }
