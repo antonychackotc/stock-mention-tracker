@@ -6495,7 +6495,19 @@
       "source_region": "US",
       "mentioned_at": "2026-10-17T16:00:37+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363281",
+      "ticker": "JPM",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Sunday Reads\nAvert your eyes! MySunday morninglook at incompetence, corruption, and policy failures:\n•TheDirtySecretBehindtheFarmedFishYouEat. Our appetite for seafood is growing. In the last 60 years, the global consumption of fish has more than doubled. As demand has increased, so have dang",
+      "source_url": "https://ritholtz.com/2026/10/10-sunday-reads-250/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-18T10:30:50+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-10-18T14:30:35.725042+00:00"
+  "last_updated": "2026-10-18T18:01:12.505870+00:00"
 }
