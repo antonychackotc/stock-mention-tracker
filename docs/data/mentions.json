@@ -6615,7 +6615,79 @@
       "source_region": "US",
       "mentioned_at": "2026-10-20T13:00:09+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=364178",
+      "ticker": "AVGO",
+      "stance": "bullish",
+      "reasoning": "Delivered high returns and steady dividend expansion within the AI sector.",
+      "text_excerpt": "At The Money: Can Dividend Investing Give You Yield AND Growth?\nAt The Money: Can Dividend Investing Give You Yield AND Growth?(October 21, 2026)\nInvestors who want to reduce risk while maintaining equity exposure may want to explore dividend equities. David Bahnsen is founder, managing partner, and chief investment officer ofThe Bahnsen Grou",
+      "source_url": "https://ritholtz.com/2026/10/atm-dividendyieldgrowth/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-22T13:30:28+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=364178",
+      "ticker": "BX",
+      "stance": "bullish",
+      "reasoning": "Highlighted as a top dividend-growing company benefiting from AI data centers.",
+      "text_excerpt": "At The Money: Can Dividend Investing Give You Yield AND Growth?\nAt The Money: Can Dividend Investing Give You Yield AND Growth?(October 21, 2026)\nInvestors who want to reduce risk while maintaining equity exposure may want to explore dividend equities. David Bahnsen is founder, managing partner, and chief investment officer ofThe Bahnsen Grou",
+      "source_url": "https://ritholtz.com/2026/10/atm-dividendyieldgrowth/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-22T13:30:28+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=364178",
+      "ticker": "AAPL",
+      "stance": "bearish",
+      "reasoning": "Criticized for hoarding massive cash reserves instead of returning capital via dividends.",
+      "text_excerpt": "At The Money: Can Dividend Investing Give You Yield AND Growth?\nAt The Money: Can Dividend Investing Give You Yield AND Growth?(October 21, 2026)\nInvestors who want to reduce risk while maintaining equity exposure may want to explore dividend equities. David Bahnsen is founder, managing partner, and chief investment officer ofThe Bahnsen Grou",
+      "source_url": "https://ritholtz.com/2026/10/atm-dividendyieldgrowth/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-22T13:30:28+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363230",
+      "ticker": "TSLA",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Thursday AM Reads\nMyBirthdaymorning reads:\n•The Real Reason Elon Musk Wants Us Looking at His Flying Car: Get ready for a Tesla megamerger with SpaceX. (Slate)\n•‘Reverse-Engineer Anything’ Is the New Wild West of AI: Over the weekend, it became fashionable to use AI to replace the operating system",
+      "source_url": "https://ritholtz.com/2026/10/10-thursday-am-reads-518/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-22T10:30:14+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363230",
+      "ticker": "NVDA",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Thursday AM Reads\nMyBirthdaymorning reads:\n•The Real Reason Elon Musk Wants Us Looking at His Flying Car: Get ready for a Tesla megamerger with SpaceX. (Slate)\n•‘Reverse-Engineer Anything’ Is the New Wild West of AI: Over the weekend, it became fashionable to use AI to replace the operating system",
+      "source_url": "https://ritholtz.com/2026/10/10-thursday-am-reads-518/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-22T10:30:14+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363230",
+      "ticker": "AAPL",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Thursday AM Reads\nMyBirthdaymorning reads:\n•The Real Reason Elon Musk Wants Us Looking at His Flying Car: Get ready for a Tesla megamerger with SpaceX. (Slate)\n•‘Reverse-Engineer Anything’ Is the New Wild West of AI: Over the weekend, it became fashionable to use AI to replace the operating system",
+      "source_url": "https://ritholtz.com/2026/10/10-thursday-am-reads-518/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-22T10:30:14+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-10-23T04:36:12.435226+00:00"
+  "last_updated": "2026-10-23T09:57:57.298777+00:00"
 }
