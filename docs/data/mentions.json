@@ -6687,7 +6687,19 @@
       "source_region": "US",
       "mentioned_at": "2026-10-22T10:30:14+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363433",
+      "ticker": "NYT",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "Defending Jonathan Miller\nIf there is one person in our real estate industry that I truly feel empathy for, it’s Jonathan Miller.\nLet me explain.\nJonathan is the appraiser behind the market reports most of our industry quotes. I first met him in the late ‘90s, when he was just starting to put them togethe",
+      "source_url": "https://ritholtz.com/2026/10/defending-jonathan-miller/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-23T15:00:36+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-10-23T19:05:57.583907+00:00"
+  "last_updated": "2026-10-23T23:04:10.532797+00:00"
 }
