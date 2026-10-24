@@ -6735,7 +6735,91 @@
       "source_region": "US",
       "mentioned_at": "2026-10-20T10:30:53+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363234",
+      "ticker": "JPM",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Wednesday AM Reads\nMy mid-week morning reads:\n​•Is CoreWeave the Silicon Valley Bank of 2026?: Perhaps, but not in the way you might think. Robin Wigglesworth: SVB’s 2023 collapse was supposed to trigger a regional-bank wave, a recession and Fed cuts. It didn’t. Now the question is whether the AI c",
+      "source_url": "https://ritholtz.com/2026/10/10-wednesday-am-reads-393/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-21T10:30:20+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363234",
+      "ticker": "SIVB",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Wednesday AM Reads\nMy mid-week morning reads:\n​•Is CoreWeave the Silicon Valley Bank of 2026?: Perhaps, but not in the way you might think. Robin Wigglesworth: SVB’s 2023 collapse was supposed to trigger a regional-bank wave, a recession and Fed cuts. It didn’t. Now the question is whether the AI c",
+      "source_url": "https://ritholtz.com/2026/10/10-wednesday-am-reads-393/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-21T10:30:20+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363274",
+      "ticker": "AMZN",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Monday AM Reads\nMy back-to-work morning reads:\n•Wall Street Is Unusually Optimistic About Third-Quarter Earnings. Here’s Why in 5 Charts. The S&P 500 is expected to post 29% third-quarter earnings growth, the third straight quarter above 25%. Barron’s charts what’s driving it. Wall Street is rid",
+      "source_url": "https://ritholtz.com/2026/10/10-monday-am-reads-497/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-19T10:30:49+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363274",
+      "ticker": "LLY",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Monday AM Reads\nMy back-to-work morning reads:\n•Wall Street Is Unusually Optimistic About Third-Quarter Earnings. Here’s Why in 5 Charts. The S&P 500 is expected to post 29% third-quarter earnings growth, the third straight quarter above 25%. Barron’s charts what’s driving it. Wall Street is rid",
+      "source_url": "https://ritholtz.com/2026/10/10-monday-am-reads-497/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-19T10:30:49+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363274",
+      "ticker": "NVDA",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Monday AM Reads\nMy back-to-work morning reads:\n•Wall Street Is Unusually Optimistic About Third-Quarter Earnings. Here’s Why in 5 Charts. The S&P 500 is expected to post 29% third-quarter earnings growth, the third straight quarter above 25%. Barron’s charts what’s driving it. Wall Street is rid",
+      "source_url": "https://ritholtz.com/2026/10/10-monday-am-reads-497/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-19T10:30:49+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363274",
+      "ticker": "AAPL",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Monday AM Reads\nMy back-to-work morning reads:\n•Wall Street Is Unusually Optimistic About Third-Quarter Earnings. Here’s Why in 5 Charts. The S&P 500 is expected to post 29% third-quarter earnings growth, the third straight quarter above 25%. Barron’s charts what’s driving it. Wall Street is rid",
+      "source_url": "https://ritholtz.com/2026/10/10-monday-am-reads-497/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-19T10:30:49+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363274",
+      "ticker": "JPM",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Monday AM Reads\nMy back-to-work morning reads:\n•Wall Street Is Unusually Optimistic About Third-Quarter Earnings. Here’s Why in 5 Charts. The S&P 500 is expected to post 29% third-quarter earnings growth, the third straight quarter above 25%. Barron’s charts what’s driving it. Wall Street is rid",
+      "source_url": "https://ritholtz.com/2026/10/10-monday-am-reads-497/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-19T10:30:49+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-10-24T01:32:20.426961+00:00"
+  "last_updated": "2026-10-24T07:13:00.997639+00:00"
 }
