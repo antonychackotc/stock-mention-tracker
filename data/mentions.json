@@ -6867,7 +6867,19 @@
       "source_region": "US",
       "mentioned_at": "2026-10-24T16:00:17+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363226",
+      "ticker": "CRWV",
+      "stance": "bearish",
+      "reasoning": "Bondholders lost confidence as debt values dropped and default swap spreads doubled.",
+      "text_excerpt": "10 Friday AM Reads\nMy end-of-week morning reads:\n•How Much Can You Safely Spend in Retirement? A 401(k) Giant Offers Guidance: Capital Group will offer two research-backed withdrawal strategies to holders of its target-date funds, keyed to the retiree’s goals and expenses. The first recommends draw",
+      "source_url": "https://ritholtz.com/2026/10/10-friday-am-reads-520/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-23T10:30:10+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-10-24T22:25:08.677783+00:00"
+  "last_updated": "2026-10-25T01:02:30.630793+00:00"
 }
