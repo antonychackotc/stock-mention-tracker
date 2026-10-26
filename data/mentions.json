@@ -6927,7 +6927,43 @@
       "source_region": "US",
       "mentioned_at": "2026-10-25T10:30:51+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363275",
+      "ticker": "NFLX",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Monday AM Reads\nMy back-to-work morning reads:\n•42 Milestones in the History of Conversation: They tell me talk is cheap. But is it, really? Even chatting with a bot nowadays can involve a hefty subscription fee. And there are plenty of human professionals, from counselors to consultants, whose ",
+      "source_url": "https://ritholtz.com/2026/10/10-monday-am-reads-498/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-26T10:30:55+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363275",
+      "ticker": "NYT",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Monday AM Reads\nMy back-to-work morning reads:\n•42 Milestones in the History of Conversation: They tell me talk is cheap. But is it, really? Even chatting with a bot nowadays can involve a hefty subscription fee. And there are plenty of human professionals, from counselors to consultants, whose ",
+      "source_url": "https://ritholtz.com/2026/10/10-monday-am-reads-498/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-26T10:30:55+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363275",
+      "ticker": "FOXA",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Monday AM Reads\nMy back-to-work morning reads:\n•42 Milestones in the History of Conversation: They tell me talk is cheap. But is it, really? Even chatting with a bot nowadays can involve a hefty subscription fee. And there are plenty of human professionals, from counselors to consultants, whose ",
+      "source_url": "https://ritholtz.com/2026/10/10-monday-am-reads-498/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-26T10:30:55+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-10-26T06:01:31.596150+00:00"
+  "last_updated": "2026-10-26T12:49:59.898825+00:00"
 }
