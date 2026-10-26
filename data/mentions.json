@@ -6891,7 +6891,43 @@
       "source_region": "US",
       "mentioned_at": "2026-10-25T16:00:12+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363282",
+      "ticker": "TSLA",
+      "stance": "bearish",
+      "reasoning": "Quarterly profits dropped significantly alongside a decline in energy storage.",
+      "text_excerpt": "10 Sunday Reads\nAvert your eyes! MySunday morninglook at incompetence, corruption, and policy failures:\n•People Trying to Quietly Quit MAGA: There’s a familiar ritual that happens every time an authoritarian movement begins to collapse. The supporters disappear. Not physically. Psychologically. ",
+      "source_url": "https://ritholtz.com/2026/10/10-sunday-reads-251/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-25T10:30:51+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363282",
+      "ticker": "FOXA",
+      "stance": "bearish",
+      "reasoning": "Cited research indicates its audience ranks lowest in current events knowledge.",
+      "text_excerpt": "10 Sunday Reads\nAvert your eyes! MySunday morninglook at incompetence, corruption, and policy failures:\n•People Trying to Quietly Quit MAGA: There’s a familiar ritual that happens every time an authoritarian movement begins to collapse. The supporters disappear. Not physically. Psychologically. ",
+      "source_url": "https://ritholtz.com/2026/10/10-sunday-reads-251/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-25T10:30:51+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363282",
+      "ticker": "PRU",
+      "stance": "bearish",
+      "reasoning": "Blamed for historically lobbying against universal healthcare access.",
+      "text_excerpt": "10 Sunday Reads\nAvert your eyes! MySunday morninglook at incompetence, corruption, and policy failures:\n•People Trying to Quietly Quit MAGA: There’s a familiar ritual that happens every time an authoritarian movement begins to collapse. The supporters disappear. Not physically. Psychologically. ",
+      "source_url": "https://ritholtz.com/2026/10/10-sunday-reads-251/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-25T10:30:51+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-10-26T00:10:15.957451+00:00"
+  "last_updated": "2026-10-26T06:01:31.596150+00:00"
 }
