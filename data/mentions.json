@@ -6879,7 +6879,19 @@
       "source_region": "US",
       "mentioned_at": "2026-10-23T10:30:10+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=364239",
+      "ticker": "AAPL",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "Time\nI thinka lotabout time. How we consume it, save it, enjoy it, spend it. How it can be interminably slow or rush by before you know it.\nOur language subtly instructs us about our concept of time: We are urged to “savor the moment”; we want to “be present.”Even store clerks bid us ",
+      "source_url": "https://ritholtz.com/2026/10/time/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-25T16:00:12+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-10-25T21:40:49.545840+00:00"
+  "last_updated": "2026-10-26T00:10:15.957451+00:00"
 }
