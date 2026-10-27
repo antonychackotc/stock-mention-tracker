@@ -6999,7 +6999,19 @@
       "source_region": "US",
       "mentioned_at": "2026-10-26T12:30:35+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363237",
+      "ticker": "META",
+      "stance": "bearish",
+      "reasoning": "Fined billions after a judge ruled its user privacy promises were deceptive lies.",
+      "text_excerpt": "10 Tuesday AM Reads\nMy Two-for-Tuesday morning reads:\n•The Biggest Takeaways From Anthropic’s IPO Prospectus: From the potential to cure cancer and a huge cushion of cash to humans losing control of AI models, here’s what stood out in Anthropic’s S-1 filing. (Wall Street Journal)\n​•How Canada Is Dec",
+      "source_url": "https://ritholtz.com/2026/10/10-tuesday-am-reads-496/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-27T10:30:23+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-10-27T16:27:08.269184+00:00"
+  "last_updated": "2026-10-27T21:13:41.448168+00:00"
 }
