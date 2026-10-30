@@ -7047,7 +7047,43 @@
       "source_region": "US",
       "mentioned_at": "2026-10-29T10:30:16+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=364440",
+      "ticker": "AAPL",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "At the Money: Preparing for a Career in the Age of Artificial Intelligence\n<span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"lazy lazy-hidden mce_SELRES_start\">﻿</span><span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"mce_SEL",
+      "source_url": "https://ritholtz.com/2026/10/atm-career-artificial-intelligence/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-29T16:00:39+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=364440",
+      "ticker": "GOOGL",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "At the Money: Preparing for a Career in the Age of Artificial Intelligence\n<span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"lazy lazy-hidden mce_SELRES_start\">﻿</span><span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"mce_SEL",
+      "source_url": "https://ritholtz.com/2026/10/atm-career-artificial-intelligence/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-29T16:00:39+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=364440",
+      "ticker": "SPOT",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "At the Money: Preparing for a Career in the Age of Artificial Intelligence\n<span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"lazy lazy-hidden mce_SELRES_start\">﻿</span><span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"mce_SEL",
+      "source_url": "https://ritholtz.com/2026/10/atm-career-artificial-intelligence/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-29T16:00:39+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-10-29T20:12:57.731383+00:00"
+  "last_updated": "2026-10-30T00:49:55.134617+00:00"
 }
