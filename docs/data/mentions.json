@@ -7191,7 +7191,31 @@
       "source_region": "US",
       "mentioned_at": "2026-10-31T13:00:11+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=363267",
+      "ticker": "LPLA",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Weekend Reads\nHalloween weekend is here! Pour yourself a mug ofDanish Blendcoffee, grab a seat outside, and get ready for our longer-form weekend reads:\n•The Sane Asylum: A love letter to a new kind of company: Brie Wolfson: The people of Silicon Valley are unwell. If you work at a frontier la",
+      "source_url": "https://ritholtz.com/2026/10/10-weekend-reads-114/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-31T10:30:17+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=364507",
+      "ticker": "INTC",
+      "stance": "bearish",
+      "reasoning": "Plunged dramatically following a weak profit forecast.",
+      "text_excerpt": "7 Surprising Market Data Points (after today’s selloff)\nAs the market melted down today, I did a deep dive into the underlying data. Some of these are more significant than others, but all were surprising:\n1.INTEL(INTC): Today, Intel suffered its worst trading day in 52 years, falling 29.4%. The steepest one-day decline since 1974 cam",
+      "source_url": "https://ritholtz.com/2026/10/7-surprising-data/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-10-30T21:00:16+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-10-31T21:25:58.090273+00:00"
+  "last_updated": "2026-11-01T01:02:29.985003+00:00"
 }
