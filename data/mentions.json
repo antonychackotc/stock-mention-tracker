@@ -7227,7 +7227,43 @@
       "source_region": "US",
       "mentioned_at": "2026-11-01T11:30:05+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=364390",
+      "ticker": "AAPL",
+      "stance": "bearish",
+      "reasoning": "Losing supplier pricing leverage as AI demand drives up memory chip costs",
+      "text_excerpt": "10 Monday AM Reads\nWelcome to November! Kick it off strong with our pre-election day morning reads:\n•What has caused the bad economic vibes, and does it actually matter?University of Michigan’s widely tracked index of American consumer sentiment this summer hit its lowest ever level, surpassing the",
+      "source_url": "https://ritholtz.com/2026/11/november-2026-reads/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-11-02T11:30:05+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=364390",
+      "ticker": "FOXA",
+      "stance": "bearish",
+      "reasoning": "Suffered a major year-over-year drop in pre-election ratings",
+      "text_excerpt": "10 Monday AM Reads\nWelcome to November! Kick it off strong with our pre-election day morning reads:\n•What has caused the bad economic vibes, and does it actually matter?University of Michigan’s widely tracked index of American consumer sentiment this summer hit its lowest ever level, surpassing the",
+      "source_url": "https://ritholtz.com/2026/11/november-2026-reads/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-11-02T11:30:05+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=364390",
+      "ticker": "LPLA",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Monday AM Reads\nWelcome to November! Kick it off strong with our pre-election day morning reads:\n•What has caused the bad economic vibes, and does it actually matter?University of Michigan’s widely tracked index of American consumer sentiment this summer hit its lowest ever level, surpassing the",
+      "source_url": "https://ritholtz.com/2026/11/november-2026-reads/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-11-02T11:30:05+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-11-02T05:51:46.357861+00:00"
+  "last_updated": "2026-11-02T15:36:43.976553+00:00"
 }
