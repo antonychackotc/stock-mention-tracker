@@ -7407,7 +7407,19 @@
       "source_region": "Asia",
       "mentioned_at": "2026-11-08T14:55:01+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=364711",
+      "ticker": "TSLA",
+      "stance": "bearish",
+      "reasoning": "Cybertruck sales fell far short of production targets due to high pricing.",
+      "text_excerpt": "10 Tuesday AM Reads\nMy Two-for-Tuesday morning reads:\n•I’m Not Convinced The AI Bubble Exists: The AI bubble is a speculative concept that the AI industry is extremely over-valued. If true, the value of most companies involved in AI (several of whom are worth well over a trillion dollars) will colla",
+      "source_url": "https://ritholtz.com/2026/11/10-tuesday-am-reads-498/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-11-10T11:30:51+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-11-12T09:42:25.725294+00:00"
+  "last_updated": "2026-11-12T18:10:33.924033+00:00"
 }
