@@ -7683,7 +7683,67 @@
       "source_region": "Europe",
       "mentioned_at": "2026-11-19T07:01:00+00:00",
       "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=364689",
+      "ticker": "PKE",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Weekend Reads\nThe weekend is here! Pour yourself a mug ofDanish Blendcoffee, grab a seat outside, and get ready for our longer-form weekend reads:\n​•Grand Theft Auto Used to Satirize American Life. Now We’ve Caught Up With It.: Joseph Bernstein got an advance copy of Grand Theft Auto VI, and g",
+      "source_url": "https://ritholtz.com/2026/11/10-weekend-reads-117/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-11-21T11:30:09+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=364712",
+      "ticker": "MSTR",
+      "stance": "bearish",
+      "reasoning": "Unsuccessful index adoption efforts resulted in low credit ratings and falling stock prices",
+      "text_excerpt": "10 Tuesday AM Reads\nMy Two-for-Tuesday morning reads:\n•The Microstrategy Debacle:The Latest Twist in Strategy’s Tragicomedy:Craig Coben: Michael Saylor says bitcoin will usher in a new orange era for capital markets, yet two years of chasing index membership and an investment-grade rating have left ",
+      "source_url": "https://ritholtz.com/2026/11/10-tuesday-am-reads-499/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-11-17T11:30:53+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=364712",
+      "ticker": "MSCI",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Tuesday AM Reads\nMy Two-for-Tuesday morning reads:\n•The Microstrategy Debacle:The Latest Twist in Strategy’s Tragicomedy:Craig Coben: Michael Saylor says bitcoin will usher in a new orange era for capital markets, yet two years of chasing index membership and an investment-grade rating have left ",
+      "source_url": "https://ritholtz.com/2026/11/10-tuesday-am-reads-499/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-11-17T11:30:53+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=364712",
+      "ticker": "SPGI",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Tuesday AM Reads\nMy Two-for-Tuesday morning reads:\n•The Microstrategy Debacle:The Latest Twist in Strategy’s Tragicomedy:Craig Coben: Michael Saylor says bitcoin will usher in a new orange era for capital markets, yet two years of chasing index membership and an investment-grade rating have left ",
+      "source_url": "https://ritholtz.com/2026/11/10-tuesday-am-reads-499/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-11-17T11:30:53+00:00",
+      "type": "post"
+    },
+    {
+      "source_id": "https://ritholtz.com/?p=364712",
+      "ticker": "BLK",
+      "stance": "neutral",
+      "reasoning": "",
+      "text_excerpt": "10 Tuesday AM Reads\nMy Two-for-Tuesday morning reads:\n•The Microstrategy Debacle:The Latest Twist in Strategy’s Tragicomedy:Craig Coben: Michael Saylor says bitcoin will usher in a new orange era for capital markets, yet two years of chasing index membership and an investment-grade rating have left ",
+      "source_url": "https://ritholtz.com/2026/11/10-tuesday-am-reads-499/",
+      "source_name": "The Big Picture (Barry Ritholtz)",
+      "source_region": "US",
+      "mentioned_at": "2026-11-17T11:30:53+00:00",
+      "type": "post"
     }
   ],
-  "last_updated": "2026-11-21T17:22:39.307092+00:00"
+  "last_updated": "2026-11-21T23:06:25.672272+00:00"
 }
